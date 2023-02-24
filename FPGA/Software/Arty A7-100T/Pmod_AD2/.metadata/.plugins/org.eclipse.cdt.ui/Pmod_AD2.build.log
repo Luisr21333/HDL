@@ -1,0 +1,21 @@
+01:11:38 **** Incremental Build of configuration Debug for project Pmod_AD2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Arty_A7-100T/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/sw/Pmod_AD2_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Pmod_AD2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Arty_A7-100T/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/sw/Pmod_AD2_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Pmod_AD2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Pmod_AD2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Pmod_AD2.elf  |tee "Pmod_AD2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78276	   1696	   3292	  83264	  14540	Pmod_AD2.elf
+'Finished building: Pmod_AD2.elf.size'
+' '
+
+01:11:38 Build Finished (took 602ms)
+

@@ -1,0 +1,17 @@
+21:07:08 **** Build of configuration Debug for project xbram_example_1 ****
+make all 
+'Building file: ../src/xbram_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xbram_example.o" -IC:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Arty_A7-100T/Pmod_AD2/Pmod_AD2_UART_wrapper/export/Pmod_AD2_UART_wrapper/sw/Pmod_AD2_UART_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xbram_example.d" -MT"src/xbram_example.o" -o "src/xbram_example.o" "../src/xbram_example.c"
+'Finished building: ../src/xbram_example.c'
+' '
+'Building target: xbram_example_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Arty_A7-100T/Pmod_AD2/Pmod_AD2_UART_wrapper/export/Pmod_AD2_UART_wrapper/sw/Pmod_AD2_UART_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "xbram_example_1.elf"  ./src/xbram_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2021.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/10.2.0/real-ld.exe: xbram_example_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/vitis/2021.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/10.2.0/real-ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 6696 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: xbram_example_1.elf] Error 1
+
+21:07:09 Build Finished (took 668ms)
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Arty A7-100T 210319B7C8A8A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Arty A7-100T-210319B7C8A8A-13631093-0&quot;}}]}"/>
+	<item key="Pmod_AD2_system-bitFile" value="C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Arty_A7-100T\Pmod_AD2\Pmod_AD2_wrapper\hw\Pmod_AD2_wrapper.bit"/>
+	<item key="Pmod_AD2_system-bmmFile" value="C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Arty_A7-100T\Pmod_AD2\Pmod_AD2_wrapper\hw\Pmod_AD2_wrapper.mmi"/>
+	<item key="Pmod_AD2_system-target" value="Local"/>
+	<item key="Pmod_AD2_system-device" value="Auto Detect"/>
+	<item key="Pmod_AD2_system-partial_bit" value="false"/>
+	<item key="Pmod_AD2_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="Pmod_AD2_system"/>
+	<item key="Pmod_AD2_system-microblaze_0-initElf" value="bootloop"/>
+	<item key="DDR_Example_system-bitFile" value="C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Arty_A7-100T\Pmod_AD2\Pmod_AD2_DDR_wrapper\hw\Pmod_AD2_UART_wrapper.bit"/>
+	<item key="DDR_Example_system-bmmFile" value="C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Arty_A7-100T\Pmod_AD2\Pmod_AD2_DDR_wrapper\hw\Pmod_AD2_UART_wrapper.mmi"/>
+	<item key="DDR_Example_system-target" value="Local"/>
+	<item key="DDR_Example_system-device" value="Auto Detect"/>
+	<item key="DDR_Example_system-partial_bit" value="false"/>
+	<item key="DDR_Example_system-skip_rev_check" value="false"/>
+	<item key="DDR_Example_system-microblaze_0-initElf" value="bootloop"/>
+</section>
