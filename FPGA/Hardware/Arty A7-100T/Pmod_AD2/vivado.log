@@ -1,0 +1,764 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jan 10 23:36:25 2023
+# Process ID: 2808
+# Current directory: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2204 C:\Users\luisr\Desktop\FPGA\Arty A7-100T\Pmod_AD2\Pmod_AD2.xpr
+# Log file: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/vivado.log
+# Journal file: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2\vivado.jou
+# Running On: DESKTOP-AJV8A0J, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16855 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Arty A7/Pmod_AD2' since last save.
+INFO: [filemgmt 56-1] Board Part Repository Path: Directory not found as 'C:/AppData/Roaming/Xilinx/Vivado/2021.2/xhub/board_store/xilinx_board_store'; using path 'C:/Users/luisr/AppData/Roaming/Xilinx/Vivado/2021.2/xhub/board_store/xilinx_board_store' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Desktop/vivado-library-master'; using path 'C:/Users/luisr/Desktop/vivado-library-master' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/luisr/Desktop/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1566.938 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}
+Reading block design file <C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- digilentinc.com:IP:PmodAD2:1.0 - PmodAD2_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - reset_inv_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Successfully read diagram <Pmod_AD2> from block design file <C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1566.938 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Jan 10 23:37:47 2023] Launched synth_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/synth_1/runme.log
+set_property AUTO_INCREMENTAL_CHECKPOINT 0 [get_runs synth_1]
+INFO: [Vivado 12-7078] The incremental_compile property on the run reflects the DCP used to generate the current run results. If you do not want to use "C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Arty A7/Pmod_AD2/Pmod_AD2.srcs/utils_1/imports/synth_1/Pmod_AD2_wrapper.dcp" for future runs, please clear the incremental_compile DCP run property.
+set_property incremental_checkpoint {C:\Users\luisr\Desktop\FPGA\Arty A7-100T\Pmod_AD2\Pmod_AD2.srcs\utils_1\imports\synth_1\Pmod_AD2_wrapper.dcp} [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Jan 10 23:38:43 2023] Launched synth_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/synth_1/runme.log
+set_property incremental_checkpoint {} [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Jan 10 23:39:28 2023] Launched synth_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/synth_1/runme.log
+add_files -fileset constrs_1 -norecurse C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Jan 10 23:53:03 2023] Launched synth_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1.dcp' for cell 'Pmod_AD2_i/PmodAD2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.dcp' for cell 'Pmod_AD2_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.dcp' for cell 'Pmod_AD2_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.dcp' for cell 'Pmod_AD2_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_reset_inv_0_1/Pmod_AD2_reset_inv_0_1.dcp' for cell 'Pmod_AD2_i/reset_inv_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.dcp' for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_dlmb_bram_if_cntlr_1/Pmod_AD2_dlmb_bram_if_cntlr_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_dlmb_v10_1/Pmod_AD2_dlmb_v10_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_ilmb_bram_if_cntlr_1/Pmod_AD2_ilmb_bram_if_cntlr_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_ilmb_v10_1/Pmod_AD2_ilmb_v10_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_lmb_bram_1/Pmod_AD2_lmb_bram_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 2107.484 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 278 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.xdc] for cell 'Pmod_AD2_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.xdc] for cell 'Pmod_AD2_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/axi_iic_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/axi_iic_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc] for cell 'Pmod_AD2_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc:50]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc] for cell 'Pmod_AD2_i/mdm_1/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1_board.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1_board.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc:57]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1_board.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port reset_0 can not be placed on PACKAGE_PIN C2 because the PACKAGE_PIN is occupied by port reset. Please note that for projects targeting board parts, user LOC constraints cannot override constraints provided with the board. [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1_board.xdc:3]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1_board.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'Pmod_AD2_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2811.312 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 104 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 2830.422 ; gain = 1090.602
+open_bd_design {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}
+open_bd_design {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}
+delete_bd_objs [get_bd_nets reset_0_1]
+delete_bd_objs [get_bd_ports reset_0]
+connect_bd_net [get_bd_ports reset] [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+regenerate_bd_layout
+validate_bd_design
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+save_bd_design
+Wrote  : <C:\Users\luisr\Desktop\FPGA\Arty A7-100T\Pmod_AD2\Pmod_AD2.srcs\sources_1\bd\Pmod_AD2\Pmod_AD2.bd> 
+Wrote  : <C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/ui/bd_989d91a2.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [BD 41-1662] The design 'Pmod_AD2.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\luisr\Desktop\FPGA\Arty A7-100T\Pmod_AD2\Pmod_AD2.srcs\sources_1\bd\Pmod_AD2\Pmod_AD2.bd> 
+VHDL Output written to : c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/synth/Pmod_AD2.vhd
+VHDL Output written to : c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/sim/Pmod_AD2.vhd
+VHDL Output written to : c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/hdl/Pmod_AD2_wrapper.vhd
+Exporting to file c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/hw_handoff/Pmod_AD2.hwh
+Generated Hardware Definition File c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/synth/Pmod_AD2.hwdef
+[Tue Jan 10 23:59:10 2023] Launched synth_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1.dcp' for cell 'Pmod_AD2_i/PmodAD2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.dcp' for cell 'Pmod_AD2_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.dcp' for cell 'Pmod_AD2_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.dcp' for cell 'Pmod_AD2_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_reset_inv_0_1/Pmod_AD2_reset_inv_0_1.dcp' for cell 'Pmod_AD2_i/reset_inv_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.dcp' for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_dlmb_bram_if_cntlr_1/Pmod_AD2_dlmb_bram_if_cntlr_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_dlmb_v10_1/Pmod_AD2_dlmb_v10_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_ilmb_bram_if_cntlr_1/Pmod_AD2_ilmb_bram_if_cntlr_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_ilmb_v10_1/Pmod_AD2_ilmb_v10_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_lmb_bram_1/Pmod_AD2_lmb_bram_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.181 . Memory (MB): peak = 2908.992 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 278 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.xdc] for cell 'Pmod_AD2_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.xdc] for cell 'Pmod_AD2_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/axi_iic_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/axi_iic_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc] for cell 'Pmod_AD2_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc:50]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc] for cell 'Pmod_AD2_i/mdm_1/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1_board.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1_board.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc:57]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1_board.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1_board.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'Pmod_AD2_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2932.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 104 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2932.129 ; gain = 23.137
+place_ports Pmod_out_0_pin1_io E15
+place_ports Pmod_out_0_pin2_io E16
+place_ports Pmod_out_0_pin3_io D15
+place_ports Pmod_out_0_pin4_io C15
+place_ports Pmod_out_0_pin7_io J17
+place_ports Pmod_out_0_pin8_io J18
+place_ports Pmod_out_0_pin9_io K15
+place_ports Pmod_out_0_pin10_io J15
+set_property SLEW {} [get_ports [list Pmod_out_0_pin3_io]]
+set_property PULLTYPE PULLUP [get_ports [list Pmod_out_0_pin3_io]]
+set_property PULLTYPE PULLUP [get_ports [list Pmod_out_0_pin4_io]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Pmod_out_0_pin1_io Pmod_out_0_pin2_io Pmod_out_0_pin3_io Pmod_out_0_pin4_io Pmod_out_0_pin7_io Pmod_out_0_pin8_io Pmod_out_0_pin9_io Pmod_out_0_pin10_io]]
+file mkdir {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new}
+close [ open {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc}}
+set_property target_constrs_file {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Jan 11 00:03:03 2023] Launched synth_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/synth_1/runme.log
+[Wed Jan 11 00:03:03 2023] Launched impl_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/impl_1/runme.log
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+write_hw_platform -fixed -include_bit -force -file {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2_wrapper.xsa}
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12464] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2021.2/data/embeddedsw) loading 0 seconds
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}}]
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1.dcp' for cell 'Pmod_AD2_i/PmodAD2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.dcp' for cell 'Pmod_AD2_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.dcp' for cell 'Pmod_AD2_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.dcp' for cell 'Pmod_AD2_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_reset_inv_0_1/Pmod_AD2_reset_inv_0_1.dcp' for cell 'Pmod_AD2_i/reset_inv_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.dcp' for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_dlmb_bram_if_cntlr_1/Pmod_AD2_dlmb_bram_if_cntlr_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_dlmb_v10_1/Pmod_AD2_dlmb_v10_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_ilmb_bram_if_cntlr_1/Pmod_AD2_ilmb_bram_if_cntlr_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_ilmb_v10_1/Pmod_AD2_ilmb_v10_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_lmb_bram_1/Pmod_AD2_lmb_bram_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 3044.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 278 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.xdc] for cell 'Pmod_AD2_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.xdc] for cell 'Pmod_AD2_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/axi_iic_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/axi_iic_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc] for cell 'Pmod_AD2_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc:50]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc] for cell 'Pmod_AD2_i/mdm_1/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1_board.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1_board.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc:57]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1_board.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1_board.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Parsing XDC File [C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'Pmod_AD2_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/data/mb_bootloop_le.elf 
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3044.898 ; gain = 0.000
+open_bd_design {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}
+create_bd_design "Pmod_AD2_UART"
+Wrote  : <C:\Users\luisr\Desktop\FPGA\Arty A7-100T\Pmod_AD2\Pmod_AD2.srcs\sources_1\bd\Pmod_AD2_UART\Pmod_AD2_UART.bd> 
+INFO: [BD 41-2613] The output directory c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART for Pmod_AD2_UART cannot be found.
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:IP:PmodAD2:1.0 PmodAD2_0
+WARNING: [IP_Flow 19-3571] IP 'Pmod_AD2_UART_PmodAD2_0_0' is restricted:
+* IP definition 'PmodAD2_v1_0 (1.0)' relies on the following subcore(s) that were not found in the IP Catalog: xilinx.com:ip:axi_iic:2.0
+endgroup
+set_property -dict [list CONFIG.C_BAUDRATE {115200} CONFIG.UARTLITE_BOARD_INTERFACE {usb_uart}] [get_bd_cells axi_uartlite_0]
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {0} axi_periph {Enabled} cache {None} clk {New Clocking Wizard} cores {1} debug_module {Debug Only} ecc {None} local_mem {8KB} preset {None}}  [get_bd_cells microblaze_0]
+WARNING: [BD 5-700] No address spaces matched 'get_bd_addr_spaces /microblaze_0'
+apply_bd_automation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 3044.898 ; gain = 0.000
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin}] [get_bd_cells clk_wiz_1]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+Slave segment '/axi_uartlite_0/S_AXI/Reg' is being assigned into address space '/microblaze_0/Data' at <0x4060_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_uartlite_0]
+INFO: [board_rule 100-100] set_property CONFIG.UARTLITE_BOARD_INTERFACE usb_uart [get_bd_cells /axi_uartlite_0]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 usb_uart
+INFO: [BoardRule 102-9] connect_bd_intf_net /usb_uart /axi_uartlite_0/UART
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_1/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_1]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_1]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardRule 102-10] create_bd_port -dir I sys_clock -type clk
+INFO: [BoardRule 102-5] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [BoardRule 102-6] set_property CONFIG.PHASE 0.0 /sys_clock
+INFO: [BoardRule 102-15] connect_bd_net /sys_clock /clk_wiz_1/clk_in1
+INFO: [BoardRule 102-17] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( System Reset ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_1/reset]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /clk_wiz_1]
+INFO: [BoardRule 102-10] create_bd_port -dir I reset -type rst
+INFO: [BoardRule 102-7] set_property CONFIG.POLARITY ACTIVE_HIGH /reset
+INFO: [BoardRule 102-11] create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 /reset_inv_0
+INFO: [BoardRule 102-12] set_property -dict CONFIG.C_SIZE 1 CONFIG.C_OPERATION not /reset_inv_0
+INFO: [BoardRule 102-13] connect_bd_net /reset /reset_inv_0/Op1
+INFO: [BoardRule 102-14] connect_bd_net /reset_inv_0/Res /clk_wiz_1/reset
+INFO: [BoardRule 102-18] set_property CONFIG.POLARITY ACTIVE_LOW /reset
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/PmodAD2_0/AXI_LITE_IIC} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins PmodAD2_0/AXI_LITE_IIC]
+Slave segment '/PmodAD2_0/AXI_LITE_IIC/Reg0' is being assigned into address space '/microblaze_0/Data' at <0x0001_0000 [ 4K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( System Reset ) } Manual_Source {Auto}}  [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /rst_clk_wiz_1_100M]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /rst_clk_wiz_1_100M]
+INFO: [BoardRule 102-10] create_bd_port -dir I reset_0 -type rst
+INFO: [BoardRule 102-7] set_property CONFIG.POLARITY ACTIVE_LOW /reset_0
+INFO: [BoardRule 102-15] connect_bd_net /reset_0 /rst_clk_wiz_1_100M/ext_reset_in
+INFO: [BoardRule 102-18] set_property CONFIG.POLARITY ACTIVE_LOW /reset_0
+endgroup
+regenerate_bd_layout
+validate_bd_design
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/PmodAD2_0/Pmod_out_pin10_i
+/PmodAD2_0/Pmod_out_pin1_i
+/PmodAD2_0/Pmod_out_pin2_i
+/PmodAD2_0/Pmod_out_pin3_i
+/PmodAD2_0/Pmod_out_pin4_i
+/PmodAD2_0/Pmod_out_pin7_i
+/PmodAD2_0/Pmod_out_pin8_i
+/PmodAD2_0/Pmod_out_pin9_i
+
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins PmodAD2_0/Pmod_out]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+delete_bd_objs [get_bd_nets reset_0_1]
+connect_bd_net [get_bd_ports reset] [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+delete_bd_objs [get_bd_ports reset_0]
+regenerate_bd_layout
+validate_bd_design
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+save_bd_design
+Wrote  : <C:\Users\luisr\Desktop\FPGA\Arty A7-100T\Pmod_AD2\Pmod_AD2.srcs\sources_1\bd\Pmod_AD2_UART\Pmod_AD2_UART.bd> 
+Wrote  : <C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2_UART/ui/bd_f92f7eeb.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Jan 11 00:29:43 2023] Launched synth_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1.dcp' for cell 'Pmod_AD2_i/PmodAD2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.dcp' for cell 'Pmod_AD2_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.dcp' for cell 'Pmod_AD2_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.dcp' for cell 'Pmod_AD2_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_reset_inv_0_1/Pmod_AD2_reset_inv_0_1.dcp' for cell 'Pmod_AD2_i/reset_inv_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.dcp' for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_dlmb_bram_if_cntlr_1/Pmod_AD2_dlmb_bram_if_cntlr_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_dlmb_v10_1/Pmod_AD2_dlmb_v10_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_ilmb_bram_if_cntlr_1/Pmod_AD2_ilmb_bram_if_cntlr_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_ilmb_v10_1/Pmod_AD2_ilmb_v10_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_lmb_bram_1/Pmod_AD2_lmb_bram_1.dcp' for cell 'Pmod_AD2_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 3077.344 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 278 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.xdc] for cell 'Pmod_AD2_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/Pmod_AD2_microblaze_0_1.xdc] for cell 'Pmod_AD2_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/axi_iic_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst/axi_iic_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_PmodAD2_0_1/Pmod_AD2_PmodAD2_0_1_board.xdc] for cell 'Pmod_AD2_i/PmodAD2_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc] for cell 'Pmod_AD2_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc:50]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_mdm_1_1/Pmod_AD2_mdm_1_1.xdc] for cell 'Pmod_AD2_i/mdm_1/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1_board.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1_board.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc:57]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_clk_wiz_1_1/Pmod_AD2_clk_wiz_1_1.xdc] for cell 'Pmod_AD2_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1_board.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1_board.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_rst_clk_wiz_1_100M_1/Pmod_AD2_rst_clk_wiz_1_100M_1.xdc] for cell 'Pmod_AD2_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Parsing XDC File [C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'Pmod_AD2_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/ip/Pmod_AD2_microblaze_0_1/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3173.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 104 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3173.020 ; gain = 100.504
+make_wrapper -files [get_files {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2_UART/Pmod_AD2_UART.bd}}] -top
+INFO: [BD 41-1662] The design 'Pmod_AD2_UART.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\luisr\Desktop\FPGA\Arty A7-100T\Pmod_AD2\Pmod_AD2.srcs\sources_1\bd\Pmod_AD2_UART\Pmod_AD2_UART.bd> 
+VHDL Output written to : C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/synth/Pmod_AD2_UART.vhd
+VHDL Output written to : C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/sim/Pmod_AD2_UART.vhd
+VHDL Output written to : C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/hdl/Pmod_AD2_UART_wrapper.vhd
+add_files -norecurse {{c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/hdl/Pmod_AD2_UART_wrapper.vhd}}
+update_compile_order -fileset sources_1
+set_property top Pmod_AD2_UART_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [BD 41-1662] The design 'Pmod_AD2_UART.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\luisr\Desktop\FPGA\Arty A7-100T\Pmod_AD2\Pmod_AD2.srcs\sources_1\bd\Pmod_AD2_UART\Pmod_AD2_UART.bd> 
+VHDL Output written to : C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/synth/Pmod_AD2_UART.vhd
+VHDL Output written to : C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/sim/Pmod_AD2_UART.vhd
+VHDL Output written to : C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/hdl/Pmod_AD2_UART_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+CRITICAL WARNING: [IP_Flow 19-4065] The definition for subcore dependency 'xilinx.com:ip:axi_iic:2.0' is not available in the repository.
+CRITICAL WARNING: [IP_Flow 19-4065] The definition for subcore dependency 'xilinx.com:ip:axi_iic:2.0' is not available in the repository.
+WARNING: [IP_Flow 19-6920] IP catalog definition and instance xml file are missing for IP Instance 'PmodAD2_axi_iic_0_0'. Port and Interface information is missing for the IP, please run report IP status. 
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodAD2_axi_iic_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:arty-a7-100:part0:1.0'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-1972] Upgraded PmodAD2_axi_iic_0_0 from AXI IIC 2.0 to AXI IIC 2.1
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodAD2_pmod_bridge_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:arty-a7-100:part0:1.0'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-1972] Upgraded PmodAD2_pmod_bridge_0_0 from Pmod Bridge 1.0 to Pmod Bridge 1.1
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodAD2_xlconstant_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:arty-a7-100:part0:1.0'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodAD2_xlconstant_0_0 (Constant 1.1) from revision 3 to revision 7
+RUNNING BOARD.XIT
+    c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodAD2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_inv_0 .
+Exporting to file C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/hw_handoff/Pmod_AD2_UART.hwh
+Generated Hardware Definition File C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/synth/Pmod_AD2_UART.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Pmod_AD2_UART_PmodAD2_0_0, cache-ID = 50f72216231d0c8f; cache size = 10.208 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Pmod_AD2_UART_rst_clk_wiz_1_100M_0, cache-ID = bd25c531a5784b86; cache size = 10.208 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Pmod_AD2_UART_reset_inv_0_0, cache-ID = 84bc40736a4dac74; cache size = 10.208 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Pmod_AD2_UART_dlmb_v10_0, cache-ID = b22139d9fe5168a0; cache size = 10.208 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Pmod_AD2_UART_ilmb_bram_if_cntlr_0, cache-ID = 01a54a6896dc5f0b; cache size = 10.208 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Pmod_AD2_UART_ilmb_v10_0, cache-ID = b22139d9fe5168a0; cache size = 10.208 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Pmod_AD2_UART_mdm_1_0, cache-ID = 0a68e7e54f793312; cache size = 10.208 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Pmod_AD2_UART_microblaze_0_0, cache-ID = 154aa357f36e124c; cache size = 10.208 MB.
+[Wed Jan 11 00:33:31 2023] Launched Pmod_AD2_UART_clk_wiz_1_0_synth_1, Pmod_AD2_UART_lmb_bram_0_synth_1, Pmod_AD2_UART_xbar_0_synth_1, Pmod_AD2_UART_axi_uartlite_0_0_synth_1, Pmod_AD2_UART_dlmb_bram_if_cntlr_0_synth_1...
+Run output will be captured here:
+Pmod_AD2_UART_clk_wiz_1_0_synth_1: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/Pmod_AD2_UART_clk_wiz_1_0_synth_1/runme.log
+Pmod_AD2_UART_lmb_bram_0_synth_1: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/Pmod_AD2_UART_lmb_bram_0_synth_1/runme.log
+Pmod_AD2_UART_xbar_0_synth_1: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/Pmod_AD2_UART_xbar_0_synth_1/runme.log
+Pmod_AD2_UART_axi_uartlite_0_0_synth_1: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/Pmod_AD2_UART_axi_uartlite_0_0_synth_1/runme.log
+Pmod_AD2_UART_dlmb_bram_if_cntlr_0_synth_1: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/Pmod_AD2_UART_dlmb_bram_if_cntlr_0_synth_1/runme.log
+[Wed Jan 11 00:33:31 2023] Launched synth_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 3173.020 ; gain = 0.000
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/Pmod_AD2_UART_PmodAD2_0_0.dcp' for cell 'Pmod_AD2_UART_i/PmodAD2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0.dcp' for cell 'Pmod_AD2_UART_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.dcp' for cell 'Pmod_AD2_UART_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.dcp' for cell 'Pmod_AD2_UART_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/Pmod_AD2_UART_microblaze_0_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_reset_inv_0_0/Pmod_AD2_UART_reset_inv_0_0.dcp' for cell 'Pmod_AD2_UART_i/reset_inv_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0.dcp' for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_xbar_0/Pmod_AD2_UART_xbar_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_dlmb_bram_if_cntlr_0/Pmod_AD2_UART_dlmb_bram_if_cntlr_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_dlmb_v10_0/Pmod_AD2_UART_dlmb_v10_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_ilmb_bram_if_cntlr_0/Pmod_AD2_UART_ilmb_bram_if_cntlr_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_ilmb_v10_0/Pmod_AD2_UART_ilmb_v10_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_lmb_bram_0/Pmod_AD2_UART_lmb_bram_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.198 . Memory (MB): peak = 3173.020 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 279 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/Pmod_AD2_UART_microblaze_0_0.xdc] for cell 'Pmod_AD2_UART_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/Pmod_AD2_UART_microblaze_0_0.xdc] for cell 'Pmod_AD2_UART_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/axi_iic_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/axi_iic_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/Pmod_AD2_UART_PmodAD2_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/Pmod_AD2_UART_PmodAD2_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.xdc] for cell 'Pmod_AD2_UART_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.xdc:50]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.xdc] for cell 'Pmod_AD2_UART_i/mdm_1/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0_board.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0_board.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0_board.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0_board.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Parsing XDC File [C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'Pmod_AD2_UART_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3215.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 104 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3215.844 ; gain = 42.824
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Jan 11 00:41:02 2023] Launched synth_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/Pmod_AD2_UART_PmodAD2_0_0.dcp' for cell 'Pmod_AD2_UART_i/PmodAD2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0.dcp' for cell 'Pmod_AD2_UART_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.dcp' for cell 'Pmod_AD2_UART_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.dcp' for cell 'Pmod_AD2_UART_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/Pmod_AD2_UART_microblaze_0_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_reset_inv_0_0/Pmod_AD2_UART_reset_inv_0_0.dcp' for cell 'Pmod_AD2_UART_i/reset_inv_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0.dcp' for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_xbar_0/Pmod_AD2_UART_xbar_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_dlmb_bram_if_cntlr_0/Pmod_AD2_UART_dlmb_bram_if_cntlr_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_dlmb_v10_0/Pmod_AD2_UART_dlmb_v10_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_ilmb_bram_if_cntlr_0/Pmod_AD2_UART_ilmb_bram_if_cntlr_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_ilmb_v10_0/Pmod_AD2_UART_ilmb_v10_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_lmb_bram_0/Pmod_AD2_UART_lmb_bram_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 3215.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 279 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/Pmod_AD2_UART_microblaze_0_0.xdc] for cell 'Pmod_AD2_UART_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/Pmod_AD2_UART_microblaze_0_0.xdc] for cell 'Pmod_AD2_UART_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/axi_iic_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/axi_iic_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/Pmod_AD2_UART_PmodAD2_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/Pmod_AD2_UART_PmodAD2_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.xdc] for cell 'Pmod_AD2_UART_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.xdc:50]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.xdc] for cell 'Pmod_AD2_UART_i/mdm_1/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0_board.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0_board.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0_board.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0_board.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Parsing XDC File [C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'Pmod_AD2_UART_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3260.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 104 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3260.555 ; gain = 44.711
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 3260.555 ; gain = 0.000
+WARNING: [Common 17-210] 'write_hwdef' is deprecated.
+ERROR: [Common 17-158] 'file' can only be specified once.
+[Wed Jan 11 00:43:10 2023] Launched impl_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/impl_1/runme.log
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2_UART/Pmod_AD2_UART.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2_UART/Pmod_AD2_UART.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+export_ip_user_files -of_objects  [get_files {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/hdl/Pmod_AD2_wrapper.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd} {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/hdl/Pmod_AD2_wrapper.vhd}}
+Wrote  : <C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/ui/bd_989d91a2.ui> 
+file delete -force {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2}
+file delete -force {c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2} {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/hdl/Pmod_AD2_wrapper.vhd}
+close [ open {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_UART_Const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_UART_Const.xdc}}
+set_property target_constrs_file {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_UART_Const.xdc} [current_fileset -constrset]
+export_ip_user_files -of_objects  [get_files {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc}}] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc}}
+file delete -force {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc}
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Jan 11 00:48:27 2023] Launched synth_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/Pmod_AD2_UART_PmodAD2_0_0.dcp' for cell 'Pmod_AD2_UART_i/PmodAD2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0.dcp' for cell 'Pmod_AD2_UART_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.dcp' for cell 'Pmod_AD2_UART_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.dcp' for cell 'Pmod_AD2_UART_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/Pmod_AD2_UART_microblaze_0_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_reset_inv_0_0/Pmod_AD2_UART_reset_inv_0_0.dcp' for cell 'Pmod_AD2_UART_i/reset_inv_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0.dcp' for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_xbar_0/Pmod_AD2_UART_xbar_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_dlmb_bram_if_cntlr_0/Pmod_AD2_UART_dlmb_bram_if_cntlr_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_dlmb_v10_0/Pmod_AD2_UART_dlmb_v10_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_ilmb_bram_if_cntlr_0/Pmod_AD2_UART_ilmb_bram_if_cntlr_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_ilmb_v10_0/Pmod_AD2_UART_ilmb_v10_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_lmb_bram_0/Pmod_AD2_UART_lmb_bram_0.dcp' for cell 'Pmod_AD2_UART_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.219 . Memory (MB): peak = 3262.121 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 279 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/Pmod_AD2_UART_microblaze_0_0.xdc] for cell 'Pmod_AD2_UART_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/Pmod_AD2_UART_microblaze_0_0.xdc] for cell 'Pmod_AD2_UART_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_axi_uartlite_0_0/Pmod_AD2_UART_axi_uartlite_0_0.xdc] for cell 'Pmod_AD2_UART_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/axi_iic_0/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_axi_iic_0_0/PmodAD2_axi_iic_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/axi_iic_0/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/Pmod_AD2_UART_PmodAD2_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/Pmod_AD2_UART_PmodAD2_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_PmodAD2_0_0/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc] for cell 'Pmod_AD2_UART_i/PmodAD2_0/inst/pmod_bridge_0/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.xdc] for cell 'Pmod_AD2_UART_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.xdc:50]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_mdm_1_0/Pmod_AD2_UART_mdm_1_0.xdc] for cell 'Pmod_AD2_UART_i/mdm_1/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0_board.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0_board.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_clk_wiz_1_0/Pmod_AD2_UART_clk_wiz_1_0.xdc] for cell 'Pmod_AD2_UART_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0_board.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0_board.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_rst_clk_wiz_1_100M_0/Pmod_AD2_UART_rst_clk_wiz_1_100M_0.xdc] for cell 'Pmod_AD2_UART_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Parsing XDC File [C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_UART_Const.xdc]
+Finished Parsing XDC File [C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_UART_Const.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'Pmod_AD2_UART_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/ip/Pmod_AD2_UART_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3355.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 104 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3355.895 ; gain = 93.773
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.047 . Memory (MB): peak = 3355.895 ; gain = 0.000
+WARNING: [Common 17-210] 'write_hwdef' is deprecated.
+ERROR: [Common 17-158] 'file' can only be specified once.
+[Wed Jan 11 00:50:00 2023] Launched impl_1...
+Run output will be captured here: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.runs/impl_1/runme.log
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2_UART/Pmod_AD2_UART.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2_UART/Pmod_AD2_UART.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2_UART/Pmod_AD2_UART.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/luisr/Desktop/FPGA/Arty'
+WARNING: [Vivado 12-818] No files matched 'A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2_UART/Pmod_AD2_UART.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+write_hw_platform -fixed -include_bit -force -file {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2_UART_wrapper.xsa}
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2_UART_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12464] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2_UART_wrapper.xsa
+open_bd_design {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2_UART/Pmod_AD2_UART.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 11 02:00:46 2023...

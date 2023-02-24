@@ -1,0 +1,153 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jan 10 23:36:25 2023
+# Process ID: 2808
+# Current directory: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2204 C:\Users\luisr\Desktop\FPGA\Arty A7-100T\Pmod_AD2\Pmod_AD2.xpr
+# Log file: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/vivado.log
+# Journal file: C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2\vivado.jou
+# Running On: DESKTOP-AJV8A0J, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16855 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.xpr}
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property AUTO_INCREMENTAL_CHECKPOINT 0 [get_runs synth_1]
+set_property incremental_checkpoint {C:\Users\luisr\Desktop\FPGA\Arty A7-100T\Pmod_AD2\Pmod_AD2.srcs\utils_1\imports\synth_1\Pmod_AD2_wrapper.dcp} [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property incremental_checkpoint {} [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+add_files -fileset constrs_1 -norecurse C:/Users/luisr/Desktop/digilent-xdc-master/Arty-A7-100-Master.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+open_bd_design {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}
+open_bd_design {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}
+delete_bd_objs [get_bd_nets reset_0_1]
+delete_bd_objs [get_bd_ports reset_0]
+connect_bd_net [get_bd_ports reset] [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+place_ports Pmod_out_0_pin1_io E15
+place_ports Pmod_out_0_pin2_io E16
+place_ports Pmod_out_0_pin3_io D15
+place_ports Pmod_out_0_pin4_io C15
+place_ports Pmod_out_0_pin7_io J17
+place_ports Pmod_out_0_pin8_io J18
+place_ports Pmod_out_0_pin9_io K15
+place_ports Pmod_out_0_pin10_io J15
+set_property SLEW {} [get_ports [list Pmod_out_0_pin3_io]]
+set_property PULLTYPE PULLUP [get_ports [list Pmod_out_0_pin3_io]]
+set_property PULLTYPE PULLUP [get_ports [list Pmod_out_0_pin4_io]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Pmod_out_0_pin1_io Pmod_out_0_pin2_io Pmod_out_0_pin3_io Pmod_out_0_pin4_io Pmod_out_0_pin7_io Pmod_out_0_pin8_io Pmod_out_0_pin9_io Pmod_out_0_pin10_io]]
+file mkdir {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new}
+close [ open {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc}}
+set_property target_constrs_file {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2_wrapper.xsa}
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}}]
+refresh_design
+open_bd_design {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}
+create_bd_design "Pmod_AD2_UART"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:IP:PmodAD2:1.0 PmodAD2_0
+endgroup
+set_property -dict [list CONFIG.C_BAUDRATE {115200} CONFIG.UARTLITE_BOARD_INTERFACE {usb_uart}] [get_bd_cells axi_uartlite_0]
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {0} axi_periph {Enabled} cache {None} clk {New Clocking Wizard} cores {1} debug_module {Debug Only} ecc {None} local_mem {8KB} preset {None}}  [get_bd_cells microblaze_0]
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin}] [get_bd_cells clk_wiz_1]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_1/clk_in1]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( System Reset ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_1/reset]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/PmodAD2_0/AXI_LITE_IIC} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins PmodAD2_0/AXI_LITE_IIC]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( System Reset ) } Manual_Source {Auto}}  [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins PmodAD2_0/Pmod_out]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+delete_bd_objs [get_bd_nets reset_0_1]
+connect_bd_net [get_bd_ports reset] [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+delete_bd_objs [get_bd_ports reset_0]
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+make_wrapper -files [get_files {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2_UART/Pmod_AD2_UART.bd}}] -top
+add_files -norecurse {{c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2_UART/hdl/Pmod_AD2_UART_wrapper.vhd}}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Pmod_AD2_UART_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/hdl/Pmod_AD2_wrapper.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2/Pmod_AD2.bd} {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/hdl/Pmod_AD2_wrapper.vhd}}
+file delete -force {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2}
+file delete -force {c:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2} {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.gen/sources_1/bd/Pmod_AD2/hdl/Pmod_AD2_wrapper.vhd}
+close [ open {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_UART_Const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_UART_Const.xdc}}
+set_property target_constrs_file {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_UART_Const.xdc} [current_fileset -constrset]
+export_ip_user_files -of_objects  [get_files {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc}}] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 {{C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc}}
+file delete -force {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/constrs_1/new/Pmod_AD2_Const.xdc}
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2_UART_wrapper.xsa}
+open_bd_design {C:/Users/luisr/Desktop/FPGA/Arty A7-100T/Pmod_AD2/Pmod_AD2.srcs/sources_1/bd/Pmod_AD2_UART/Pmod_AD2_UART.bd}
