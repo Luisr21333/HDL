@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="UART_axi_smc_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_rst_clk_wiz_0_166M_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_rst_clk_wiz_0_166M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_mdm_1_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_axi_uartlite_0_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_lmb_bram_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_ilmb_v10_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_microblaze_0_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_dlmb_v10_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_mig_7series_0_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_mig_7series_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="UART_rst_mig_7series_0_83M_0_synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/UART_rst_mig_7series_0_83M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/luisr/Desktop/FPGA/Arty A7-100T/UART/UART/UART.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="UART_axi_smc_0_synth_1"/>
+		<Parent Id="UART_rst_clk_wiz_0_166M_0_synth_1"/>
+		<Parent Id="UART_mdm_1_0_synth_1"/>
+		<Parent Id="UART_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="UART_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="UART_lmb_bram_0_synth_1"/>
+		<Parent Id="UART_ilmb_v10_0_synth_1"/>
+		<Parent Id="UART_microblaze_0_0_synth_1"/>
+		<Parent Id="UART_dlmb_v10_0_synth_1"/>
+		<Parent Id="UART_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="UART_mig_7series_0_0_synth_1"/>
+		<Parent Id="UART_clk_wiz_0_0_synth_1"/>
+		<Parent Id="UART_rst_mig_7series_0_83M_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
