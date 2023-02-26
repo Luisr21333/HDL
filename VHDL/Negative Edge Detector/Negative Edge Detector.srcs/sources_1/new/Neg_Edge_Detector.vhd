@@ -15,6 +15,7 @@ architecture Behavioral of Neg_Edge_Detector is
 begin
   process (clk, reset)
   begin
+    --asynchronous active high reset
     if reset = '1' then
       falling_edge_detected <= '0';
       prev_clk <= '0';
