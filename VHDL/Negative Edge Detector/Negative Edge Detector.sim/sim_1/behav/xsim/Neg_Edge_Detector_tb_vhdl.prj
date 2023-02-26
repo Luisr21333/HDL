@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Negative Edge Detector.srcs/sources_1/new/Neg_Edge_Detector.vhd" \
+"../../../../Negative Edge Detector.srcs/sim_1/new/Neg_Edge_Detector_tb.vhd" \
+
+# Do not sort compile order
+nosort
