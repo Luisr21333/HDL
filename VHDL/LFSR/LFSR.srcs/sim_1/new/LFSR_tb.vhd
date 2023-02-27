@@ -44,19 +44,5 @@ begin
     
      --end simulation
     assert false report "Simulation Finished" severity failure;
---    reset <= '1';
---    wait for 50 ns;
---    reset <= '0';
---    wait for 100 ns;
   end process;
-
-  test_process : process
-  begin
-    
-    --wait for 800 ns;
-    
-     --end simulation
-    --assert false report "Simulation Finished" severity failure;
-    
-end process;
 end architecture;
