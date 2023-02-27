@@ -40,7 +40,7 @@ begin
     reset <= '1';
     wait for 50 ns;
     reset <= '0';
-    wait for 750 ns;
+    wait for 650 ns;
     
      --end simulation
     assert false report "Simulation Finished" severity failure;
