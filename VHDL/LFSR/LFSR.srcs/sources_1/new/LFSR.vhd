@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- parameterized Linear Feedback Shift Register (LFSR)
 entity LFSR is
   generic (
     WIDTH : integer := 8;
@@ -15,9 +16,7 @@ entity LFSR is
 end entity;
 
 architecture behavioral of LFSR is
-
-  signal lfsr_reg : unsigned(WIDTH-1 downto 0);
-
+signal lfsr_reg : unsigned(WIDTH-1 downto 0);
 begin
 
   process(clk)
@@ -33,5 +32,4 @@ begin
       lfsr_out <= lfsr_reg;
     end if;
   end process;
-
 end architecture;
