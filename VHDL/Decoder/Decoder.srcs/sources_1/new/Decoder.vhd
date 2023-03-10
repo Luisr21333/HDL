@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- parameterized  Decoder
 entity Decoder is
   generic (
     N: positive := 4; -- Number of inputs

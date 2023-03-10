@@ -1,10 +1,16 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+-- parameterized  Decoder
 entity Decoder_tb is
 end entity;
 
 architecture behavioral of Decoder_tb is
+constant N : integer := 4;
+constant M : integer := 16;
+signal input_signal: std_logic_vector(N-1 downto 0);
+signal output_signal: std_logic_vector(M-1 downto 0);
+
   component Decoder is
     generic (
       N: positive := 4;
@@ -15,12 +21,9 @@ architecture behavioral of Decoder_tb is
       output: out std_logic_vector(M-1 downto 0)
     );
   end component;
-
-  signal input_signal: std_logic_vector(3 downto 0);
-  signal output_signal: std_logic_vector(15 downto 0);
-
+  
 begin
-  dut: Decoder generic map(N => 4, M => 16)
+  dut: Decoder generic map(N => N, M => M)
        port map(input => input_signal, output => output_signal);
 
   stim_proc: process
@@ -88,6 +91,6 @@ begin
     --end simulation
     assert false report "Simulation Finished" severity failure;
     end process;
-end Behavioral;
+end behavioral;
 
    
