@@ -1,13 +1,14 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+-- Negative Edge Detector
 entity Neg_Edge_Detector_tb is
 end entity Neg_Edge_Detector_tb;
 
 architecture behavioral of Neg_Edge_Detector_tb is
-  signal clk : std_logic := '0';
-  signal reset : std_logic := '0';
-  signal falling_edge_detected : std_logic;
+signal clk : std_logic := '0';
+signal reset : std_logic := '0';
+signal falling_edge_detected : std_logic;
 
   component Neg_Edge_Detector is
     port (
@@ -40,7 +41,7 @@ begin
     
     wait for 50 ns;
        
-    --end simulation
+    -- end simulation
     assert false report "Simulation Finished" severity failure;
     end process;
 end Behavioral;
