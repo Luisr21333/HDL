@@ -1,11 +1,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+-- parameterized Johnson Counter  
 entity Johnson_Counter is
     generic (
         WIDTH : integer := 4
     );
-    Port ( clk : in  STD_LOGIC;
+    port ( clk : in  STD_LOGIC;
            rst : in  STD_LOGIC;
            Q : out  STD_LOGIC_VECTOR (WIDTH-1 downto 0));
 end Johnson_Counter;

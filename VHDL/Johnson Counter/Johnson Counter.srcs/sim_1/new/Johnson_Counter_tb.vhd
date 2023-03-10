@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
   
+-- parameterized Johnson Counter  
 entity Johnson_Counter_tb is
 end Johnson_Counter_tb;
   
@@ -17,7 +18,7 @@ signal Q : std_logic_vector(3 downto 0);
     port(
          clk : in  std_logic;
          rst : in  std_logic;
-         Q : out  std_logic_vector(3 downto 0)
+         Q : out  std_logic_vector(WIDTH-1 downto 0)
         );
     end component;
     
