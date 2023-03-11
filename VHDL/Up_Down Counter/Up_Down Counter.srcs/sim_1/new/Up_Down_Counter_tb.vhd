@@ -2,16 +2,17 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- parameterized Up/Down Counter  
 entity Up_Down_Counter_tb is
 end entity;
 
 architecture behavioral of Up_Down_Counter_tb is
-  constant WIDTH : integer := 8;
-  signal clk : std_logic := '0';
-  signal reset : std_logic := '1';
-  signal dir : std_logic := '0';
-  signal count : unsigned(WIDTH-1 downto 0);
-
+constant WIDTH : integer := 8;
+constant PERIOD : time := 10 ns;
+signal clk : std_logic := '0';
+signal reset : std_logic := '1';
+signal dir : std_logic := '0';
+signal count : unsigned(WIDTH-1 downto 0);
   component Up_Down_Counter is
     generic (
       WIDTH : integer := 8
@@ -23,8 +24,6 @@ architecture behavioral of Up_Down_Counter_tb is
       count : out unsigned(WIDTH-1 downto 0)
     );
   end component;
-
-  constant PERIOD : time := 10 ns;
 
 begin
   uut : up_down_counter
@@ -67,7 +66,7 @@ begin
     wait for PERIOD * 17.5;
     assert count = to_unsigned(0, WIDTH) report "Down counter test failed" severity error;
 
-    --end simulation
+    -- end simulation
     assert false report "Simulation Finished" severity failure;
   end process;
 end architecture;
