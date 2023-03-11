@@ -20,8 +20,8 @@ entity RAM is
 end entity;
 
 architecture behavioral of RAM is
-    type mem_array is array (0 to 2**ADDR_WIDTH - 1) of unsigned(DATA_WIDTH - 1 downto 0);
-    signal memory : mem_array := (others => (others => '0'));
+type mem_array is array (0 to 2**ADDR_WIDTH - 1) of unsigned(DATA_WIDTH - 1 downto 0);
+signal memory : mem_array := (others => (others => '0'));
 begin
     process (clk, rst) is
     begin
