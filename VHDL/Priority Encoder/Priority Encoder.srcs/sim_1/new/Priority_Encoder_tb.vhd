@@ -1,10 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+-- parameterized Priority Encoder
 entity Priority_Encoder_tb is
 end entity;
 
 architecture behavioral of Priority_Encoder_tb is
+constant N: positive := 4;
+constant M: positive := 2;
+signal input_signal: std_logic_vector(3 downto 0);
+signal output_signal: std_logic_vector(1 downto 0);
   component Priority_Encoder is
     generic (
       N: positive := 4;
@@ -16,11 +21,8 @@ architecture behavioral of Priority_Encoder_tb is
     );
   end component;
 
-  signal input_signal: std_logic_vector(3 downto 0);
-  signal output_signal: std_logic_vector(1 downto 0);
-
 begin
-  dut: Priority_Encoder generic map(N => 4, M => 2)
+  dut: Priority_Encoder generic map(N => N, M => M)
        port map(input => input_signal, output => output_signal);
 
   stim_proc: process
@@ -89,9 +91,7 @@ begin
     wait for 10 ns;
     assert output_signal = "11" report "Error for input 15" severity error;
     
-    --end simulation
+    -- end simulation
     assert false report "Simulation Finished" severity failure;
-
-    --wait;
   end process;
 end architecture;

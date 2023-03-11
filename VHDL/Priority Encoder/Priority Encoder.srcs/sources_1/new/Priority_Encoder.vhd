@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- parameterized Priority Encoder
 entity Priority_Encoder is
   generic (
     N: positive := 4;
@@ -19,8 +20,8 @@ begin
     variable index: integer range 0 to N-1 := -1;
   begin
     index := -1;
-    --for i in N-1 downto 0 loop --priority given from LSB-MSB
-    for i in 0 to N-1 loop --priority given from MSB-LSB
+    -- for i in N-1 downto 0 loop --priority given from LSB-MSB
+    for i in 0 to N-1 loop -- priority given from MSB-LSB
       if input(i) = '1' then
         index := i;
       end if;
