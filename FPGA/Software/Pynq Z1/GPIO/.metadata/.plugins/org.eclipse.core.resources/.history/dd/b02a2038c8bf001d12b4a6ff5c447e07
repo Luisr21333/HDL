@@ -1,0 +1,83 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "sleep.h"
+
+#define R 0x04
+#define G 0x02
+#define B 0x03
+
+XGpio gpio;
+
+int main() {
+
+init_platform();
+
+// Initialize GPIO
+XGpio_Initialize(&gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+
+// Set the input/output direction of all discrete signals for the specified GPIO channel
+XGpio_SetDataDirection(&gpio, 1, 0);
+XGpio_SetDataDirection(&gpio, 2, 1);
+
+// Set output discrete(s) to logic 1 for the specified GPIO channel
+//XGpio_DiscreteSet(&gpio, 1, 0);
+
+print("RDG LED Demo\n\r");
+
+int button;
+	while (1) {
+		button = XGpio_DiscreteRead(&gpio, 2);
+		switch (button) {
+		case 1:
+			xil_printf("%d: ",button);
+			XGpio_DiscreteWrite(&gpio, 1, R);
+			print("\tRED\n\r");
+			break;
+		case 2:
+			xil_printf("%d: ",button);
+			XGpio_DiscreteWrite(&gpio, 1, G);
+			print("\tGREEN\n\r");
+			break;
+		case 4:
+			xil_printf("%d: ",button);
+			XGpio_DiscreteWrite(&gpio, 1, B);
+			print("\tBLUE\n\r");
+			break;
+		case 8:
+			xil_printf("%d: ", button);
+			print("\tRGB\n\r");
+			XGpio_DiscreteWrite(&gpio, 1, R);
+			sleep(1);
+			XGpio_DiscreteClear(&gpio, 1, R);
+			sleep(1);
+
+			XGpio_DiscreteWrite(&gpio, 1, G);
+			sleep(1);
+			XGpio_DiscreteClear(&gpio, 1, G);
+			sleep(1);
+
+			XGpio_DiscreteWrite(&gpio, 1, B);
+			sleep(1);
+			XGpio_DiscreteClear(&gpio, 1, B);
+			sleep(1);
+			break;
+		default:
+			XGpio_DiscreteClear(&gpio, 1, R);
+			XGpio_DiscreteClear(&gpio, 1, G);
+			XGpio_DiscreteClear(&gpio, 1, B);
+			break;
+		}
+	}
+
+	//driverInit();
+
+	//configGpio();
+
+	//runProject();
+
+	cleanup_platform();
+	return 0;
+}
