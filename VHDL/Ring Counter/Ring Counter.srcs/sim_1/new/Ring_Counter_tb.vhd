@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
   
+-- parameterized Ring Counter  
 entity Ring_Counter_tb is
 end Ring_Counter_tb;
   
@@ -44,7 +45,7 @@ begin
       rst <= '0';
       wait for CLOCK_period*15;     
     
-      --end simulation
+      -- end simulation
       assert false report "Simulation Finished" severity failure;
    end process;
 end architecture;

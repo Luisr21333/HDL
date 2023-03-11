@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
 
+-- parameterized Ring Counter  
 entity Ring_Counter is
     generic (
         WIDTH : integer := 4
@@ -16,12 +16,15 @@ signal q_tmp: std_logic_vector(WIDTH-1 downto 0):= "0000";
 begin
     process(clk,rst)
     begin
-    --asynchronous active high reset
+    -- asynchronous active high reset
     if rst = '1' then
         q_tmp <= "1001"; --any value other than '0', otherwise Q will be '0'
         elsif Rising_edge(clk) then
-            --shift left
+            -- shift left
             q_tmp <= q_tmp(WIDTH-2 downto 0) & q_tmp(WIDTH-1);
+            
+            -- debugging shift right
+            --q_tmp <= q_tmp(WIDTH-1) & q_tmp(WIDTH-2 downto 0);
     end if;
     end process;
 Q <= q_tmp;
