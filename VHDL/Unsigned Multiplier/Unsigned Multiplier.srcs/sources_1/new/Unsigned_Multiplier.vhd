@@ -3,6 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
 
+-- parameterized Unsigned Multiplier  
 entity Unsigned_Multiplier is
 generic(
 WIDTH : integer := 16
@@ -14,7 +15,7 @@ Mult_out : out std_logic_vector(WIDTH*2 - 1 downto 0)
 );
 end Unsigned_Multiplier;
 
-architecture Behavioral of Unsigned_Multiplier is
+architecture behavioral of Unsigned_Multiplier is
 begin
 Mult_out <= A * B;
-end Behavioral;
+end behavioral;

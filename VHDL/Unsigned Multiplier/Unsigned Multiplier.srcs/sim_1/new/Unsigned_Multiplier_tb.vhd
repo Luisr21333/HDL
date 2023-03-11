@@ -3,10 +3,11 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
 
+-- parameterized Unsigned Multiplier  
 entity Unsigned_Multiplier_tb is
 end Unsigned_Multiplier_tb;
 
-architecture Behavioral of Unsigned_Multiplier_tb is
+architecture behavioral of Unsigned_Multiplier_tb is
     constant WIDTH : integer := 16;
     signal A_sig, B_sig : std_logic_vector(WIDTH-1 downto 0) := (others => '0');
     signal Mult_sig : std_logic_vector(WIDTH*2 - 1 downto 0) := (others => '0');
@@ -29,7 +30,7 @@ begin
 
     stimulus : process
     begin
-        --exhaustively testing all inputs 
+        -- exhaustively testing all inputs 
         for i in 0 to 255 loop
             for j in 0 to 255 loop
             A_sig <= std_logic_vector(to_unsigned(i,WIDTH));
@@ -38,7 +39,7 @@ begin
             end loop;
         end loop;
         
-        --end simulation
+        -- end simulation
         assert false report "Simulation Finished" severity failure;
     end process;
 
