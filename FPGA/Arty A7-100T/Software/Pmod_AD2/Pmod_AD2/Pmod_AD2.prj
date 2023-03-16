@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Pmod_AD2" location="C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Arty_A7-100T/Pmod_AD2/Pmod_AD2" platform="C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Arty_A7-100T/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/Pmod_AD2_wrapper.xpfm" platformUID="xilinx:arty-a7-100::0.0(custom)" systemProject="Pmod_AD2_system" sysConfig="Pmod_AD2_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="ac4bdd080b772a0aab7755c245d4d5fc">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.987529825" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.2012170291" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

@@ -1,0 +1,6 @@
+01:11:39 **** Incremental Build of configuration Debug for project Pmod_AD2_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+01:11:39 Build Finished (took 109ms)
+

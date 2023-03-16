@@ -1,0 +1,8 @@
+23:15:15 **** Clean-only build of configuration Debug for project BPM_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+23:15:15 Build Finished (took 184ms)
+

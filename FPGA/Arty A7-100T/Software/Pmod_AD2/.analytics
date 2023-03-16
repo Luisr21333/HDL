@@ -1,0 +1,11 @@
+timestamp=[2023-02-19 01:07:50], mode=APP_CREATION, duration=0:00:03.105, duration_ms=3105, data={name=Pmod_AD2, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=Pmod_AD2_UART_wrapper, application_type=application}
+timestamp=[2023-02-19 01:10:06], mode=APP_CREATION, duration=0:00:02.975, duration_ms=2975, data={name=Pmod_AD2, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=Pmod_AD2_wrapper, application_type=application}
+timestamp=[2023-02-19 01:10:15], mode=PLATFORM_GENERATION, duration=0:00:06.320, duration_ms=6320, data={name=Pmod_AD2_wrapper}
+timestamp=[2023-02-19 01:10:16], mode=BUILD, duration=0:00:01.182, duration_ms=1182, data={name=Pmod_AD2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 01:10:17], mode=BUILD, duration=0:00:00.110, duration_ms=110, data={name=Pmod_AD2_system, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 01:11:38], mode=PLATFORM_GENERATION, duration=0:00:01.792, duration_ms=1792, data={name=Pmod_AD2_wrapper}
+timestamp=[2023-02-19 01:11:38], mode=BUILD, duration=0:00:00.618, duration_ms=618, data={name=Pmod_AD2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 01:11:39], mode=BUILD, duration=0:00:00.119, duration_ms=119, data={name=Pmod_AD2_system, configuration=Debug, clean_build=false}
+timestamp=[2023-02-24 13:49:43], mode=WORKBENCH_START, duration=0:00:17.779, duration_ms=17779, data={}
+timestamp=[2023-02-24 13:49:43], mode=WORKBENCH_UI_INIT, duration=0:00:00.777, duration_ms=777, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Pmod_AD2,Pmod_AD2_system,Pmod_AD2_wrapper,RemoteSystemsTempFiles}
+timestamp=[2023-02-24 13:49:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.311, duration_ms=311, data={}
