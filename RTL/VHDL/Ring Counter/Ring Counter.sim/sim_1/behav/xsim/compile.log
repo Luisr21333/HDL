@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/luisr/Desktop/FPGA/RTL/VHDL/Ring Counter/Ring Counter.srcs/sources_1/new/Ring_Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Ring_Counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/luisr/Desktop/FPGA/RTL/VHDL/Ring Counter/Ring Counter.srcs/sim_1/new/Ring_Counter_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Ring_Counter_tb'
