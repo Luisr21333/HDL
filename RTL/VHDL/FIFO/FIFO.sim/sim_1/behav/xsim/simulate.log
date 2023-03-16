@@ -1,0 +1,37 @@
+Time resolution is 1 ps
+Note: Unexpected value in dout: XX
+Time: 40 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 120 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 140 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 280 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 300 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 440 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 460 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 01
+Time: 480 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 02
+Time: 520 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 540 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 600 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 01
+Time: 620 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 02
+Time: 640 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 680 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 700 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 840 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 860 ns  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
+Note: Unexpected value in dout: 03
+Time: 1 us  Iteration: 0  Process: /FIFO_tb/read_gen  File: C:/Users/luisr/Desktop/FPGA/RTL/VHDL/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.vhd
