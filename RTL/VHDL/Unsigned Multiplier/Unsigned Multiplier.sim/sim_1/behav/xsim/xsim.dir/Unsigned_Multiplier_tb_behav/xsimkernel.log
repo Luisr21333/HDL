@@ -1,0 +1,4 @@
+Running: xsim.dir/Unsigned_Multiplier_tb_behav/xsimk.exe -simmode gui -wdb Unsigned_Multiplier_tb_behav.wdb -simrunnum 0 -socket 63138
+Design successfully loaded
+Design Loading Memory Usage: 7800 KB (Peak: 7800 KB)
+Design Loading CPU Usage: 0 ms
