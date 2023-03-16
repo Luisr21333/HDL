@@ -1,0 +1,108 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "sleep.h"
+
+#define DARK_BLUE 0x1
+#define GREEN 0x02
+#define LIGHT_BLUE 0x03
+#define RED 0x04
+#define PURPLE 0x05
+#define YELLOW 0x06
+#define WHITE 0x07
+
+
+XGpio gpio;
+
+int main() {
+
+init_platform();
+
+// Initialize GPIO
+XGpio_Initialize(&gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+
+// Set the input/output direction of all discrete signals for the specified GPIO channel
+XGpio_SetDataDirection(&gpio, 1, 0); // GPIO output channel 1 (RGB LEDs)
+XGpio_SetDataDirection(&gpio, 2, 1); // GPIO input channel 2 (push buttons)
+
+print("RDG LED Demo\n\r");
+
+int button;
+	while (1) {
+
+		// Read from input channel 2
+		button = XGpio_DiscreteRead(&gpio, 2);
+
+		switch (button) {
+		case 1:
+			xil_printf("%d: ",button);
+			XGpio_DiscreteWrite(&gpio, 1, DARK_BLUE); //dark blue
+			print("\tDARK BLUE\n\r");
+			break;
+		case 2:
+			xil_printf("%d: ",button);
+			XGpio_DiscreteWrite(&gpio, 1, GREEN); //green
+			print("\tGREEN\n\r");
+			break;
+		case 3:
+			xil_printf("%d: ",button);
+			XGpio_DiscreteWrite(&gpio, 1, LIGHT_BLUE); //light blue
+			print("\tLIGHT BLUE\n\r");
+			break;
+		case 4:
+			xil_printf("%d: ",button);
+			XGpio_DiscreteWrite(&gpio, 1, RED); //red
+			print("\tRED\n\r");
+			break;
+		case 5:
+			xil_printf("%d: ",button);
+			XGpio_DiscreteWrite(&gpio, 1, PURPLE); //purple
+			print("\tPURPLE\n\r");
+			break;
+		case 6:
+			xil_printf("%d: ",button);
+			XGpio_DiscreteWrite(&gpio, 1, YELLOW); //yellow
+			print("\tYELLOW\n\r");
+			break;
+		case 7:
+			xil_printf("%d: ", button);
+			print("\tWhite\n\r");
+			XGpio_DiscreteWrite(&gpio, 1, WHITE); //almost white
+			break;
+			//sleep(1);
+			/////////////////////////////Don't need the anything after 0x07
+
+			//XGpio_DiscreteClear(&gpio, 1, RED);
+			//sleep(1);
+
+			//XGpio_DiscreteWrite(&gpio, 1, GREEN);
+			//sleep(1);
+
+			//XGpio_DiscreteClear(&gpio, 1, GREEN);
+			//sleep(1);
+
+			//XGpio_DiscreteWrite(&gpio, 1, BLUE);
+			//sleep(1);
+
+			//XGpio_DiscreteClear(&gpio, 1, BLUE);
+			//sleep(1);
+			//break;
+		default:
+			XGpio_DiscreteClear(&gpio, 1, RED);
+			XGpio_DiscreteClear(&gpio, 1, GREEN);
+			//XGpio_DiscreteClear(&gpio, 1, BLUE);
+			break;
+		}
+	}
+
+	//driverInit();
+
+	//configGpio();
+
+	//runProject();
+
+	cleanup_platform();
+	return 0;
+}

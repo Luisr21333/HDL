@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="GPIO" location="C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO" platform="C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO_wrapper/export/GPIO_wrapper/GPIO_wrapper.xpfm" platformUID="xilinx:pynq-z1::0.0(custom)" systemProject="GPIO_system" sysConfig="GPIO_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="c09f556524dc870cb482c34070f41fa0">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.173408834">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.517088759" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

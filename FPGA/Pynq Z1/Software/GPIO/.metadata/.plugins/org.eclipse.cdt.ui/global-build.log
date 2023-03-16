@@ -1,0 +1,31 @@
+Nothing to build in platform 'GPIO_wrapper'
+
+23:16:28 **** Incremental Build of configuration Debug for project GPIO ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/GPIO.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO_wrapper/export/GPIO_wrapper/sw/GPIO_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: GPIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO_wrapper/export/GPIO_wrapper/sw/GPIO_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "GPIO.elf"  ./src/GPIO.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24506	   1160	  22600	  48266	   bc8a	GPIO.elf
+'Finished building: GPIO.elf.size'
+' '
+23:16:29 **** Incremental Build of configuration Debug for project GPIO_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 57321 C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO_wrapper/export/GPIO_wrapper/GPIO_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO_wrapper/export/GPIO_wrapper/GPIO_wrapper.xpfm --sys_config GPIO_wrapper --bif C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO_system/Debug/system.bif --bitstream C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO/_ide/bitstream/GPIO_wrapper.bit --elf C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO/Debug/GPIO.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO/_ide/bitstream/GPIO_wrapper.bit
+Running C:/Xilinx/Vitis/2021.2/bin/bootgen  -image C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/GPIO/GPIO_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
