@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Pmod_AD2" location="C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_AD2/Pmod_AD2" platform="C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/Pmod_AD2_wrapper.xpfm" platformUID="xilinx:pynq-z1::0.0(custom)" systemProject="Pmod_AD2_system" sysConfig="Pmod_AD2_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="ae0248f95a50f59ac1f09cf41ea19233">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1499391403" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.58979225" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

@@ -1,0 +1,25 @@
+23:30:26 **** Incremental Build of configuration Debug for project Pmod_AD2 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/sw/Pmod_AD2_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Pmod_AD2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/sw/Pmod_AD2_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "Pmod_AD2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Pmod_AD2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Pmod_AD2.elf  |tee "Pmod_AD2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54967	   2564	  22768	  80299	  139ab	Pmod_AD2.elf
+'Finished building: Pmod_AD2.elf.size'
+' '
+
+23:30:27 Build Finished (took 886ms)
+
