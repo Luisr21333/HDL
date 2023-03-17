@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1679081134" LaunchIncrCheckpoint="$PPRDIR/UART_DDR/UART_DDR.srcs/utils_1/imports/synth_1/UART_DDR_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1679080714">
   <File Type="PA-TCL" Name="UART_DDR_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="UART_DDR_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="UART_DDR_wrapper_reports.tcl"/>
@@ -24,12 +24,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/UART_DDR/ip/UART_DDR_mig_7series_0_0/board.prj">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="ScopedToCell" Val="UART_DDR_mig_7series_0_0"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="UART_DDR_wrapper"/>
@@ -44,14 +38,6 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
-    <File Path="$PPRDIR/UART_DDR/UART_DDR.srcs/utils_1/imports/synth_1/UART_DDR_wrapper.dcp">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedInSteps" Val="synth_1"/>
-        <Attr Name="AutoDcp" Val="1"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
@@ -60,16 +46,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_mig_7series_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_ilmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_rst_mig_7series_0_83M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_dlmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_axi_smc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_ilmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_mdm_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="UART_DDR_processing_system7_0_0"/>
 </GenRun>

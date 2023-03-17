@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.runs/impl_1'
+HD_PWD='C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

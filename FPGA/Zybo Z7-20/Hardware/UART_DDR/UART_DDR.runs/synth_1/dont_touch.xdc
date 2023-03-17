@@ -4,40 +4,7 @@
 # Block Designs: bd/UART_DDR/UART_DDR.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR || ORIG_REF_NAME==UART_DDR} -quiet] -quiet
 
-# IP: bd/UART_DDR/ip/UART_DDR_microblaze_0_0/UART_DDR_microblaze_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_microblaze_0_0 || ORIG_REF_NAME==UART_DDR_microblaze_0_0} -quiet] -quiet
+# IP: bd/UART_DDR/ip/UART_DDR_processing_system7_0_0/UART_DDR_processing_system7_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_processing_system7_0_0 || ORIG_REF_NAME==UART_DDR_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/UART_DDR/ip/UART_DDR_mig_7series_0_0/UART_DDR_mig_7series_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_mig_7series_0_0 || ORIG_REF_NAME==UART_DDR_mig_7series_0_0} -quiet] -quiet
-
-# IP: bd/UART_DDR/ip/UART_DDR_clk_wiz_0_0/UART_DDR_clk_wiz_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_clk_wiz_0_0 || ORIG_REF_NAME==UART_DDR_clk_wiz_0_0} -quiet] -quiet
-
-# IP: bd/UART_DDR/ip/UART_DDR_dlmb_v10_0/UART_DDR_dlmb_v10_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_dlmb_v10_0 || ORIG_REF_NAME==UART_DDR_dlmb_v10_0} -quiet] -quiet
-
-# IP: bd/UART_DDR/ip/UART_DDR_ilmb_v10_0/UART_DDR_ilmb_v10_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_ilmb_v10_0 || ORIG_REF_NAME==UART_DDR_ilmb_v10_0} -quiet] -quiet
-
-# IP: bd/UART_DDR/ip/UART_DDR_dlmb_bram_if_cntlr_0/UART_DDR_dlmb_bram_if_cntlr_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_dlmb_bram_if_cntlr_0 || ORIG_REF_NAME==UART_DDR_dlmb_bram_if_cntlr_0} -quiet] -quiet
-
-# IP: bd/UART_DDR/ip/UART_DDR_ilmb_bram_if_cntlr_0/UART_DDR_ilmb_bram_if_cntlr_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_ilmb_bram_if_cntlr_0 || ORIG_REF_NAME==UART_DDR_ilmb_bram_if_cntlr_0} -quiet] -quiet
-
-# IP: bd/UART_DDR/ip/UART_DDR_lmb_bram_0/UART_DDR_lmb_bram_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_lmb_bram_0 || ORIG_REF_NAME==UART_DDR_lmb_bram_0} -quiet] -quiet
-
-# IP: bd/UART_DDR/ip/UART_DDR_mdm_1_0/UART_DDR_mdm_1_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_mdm_1_0 || ORIG_REF_NAME==UART_DDR_mdm_1_0} -quiet] -quiet
-
-# IP: bd/UART_DDR/ip/UART_DDR_rst_mig_7series_0_83M_0/UART_DDR_rst_mig_7series_0_83M_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_rst_mig_7series_0_83M_0 || ORIG_REF_NAME==UART_DDR_rst_mig_7series_0_83M_0} -quiet] -quiet
-
-# IP: bd/UART_DDR/ip/UART_DDR_axi_smc_0/UART_DDR_axi_smc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_axi_smc_0 || ORIG_REF_NAME==UART_DDR_axi_smc_0} -quiet] -quiet
-
-# IP: bd/UART_DDR/ip/UART_DDR_axi_uartlite_0_0/UART_DDR_axi_uartlite_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_DDR_axi_uartlite_0_0 || ORIG_REF_NAME==UART_DDR_axi_uartlite_0_0} -quiet] -quiet
-
-# XDC: c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/UART_DDR_ooc.xdc
+# XDC: c:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/UART_DDR_ooc.xdc

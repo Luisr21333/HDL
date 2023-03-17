@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.runs/synth_1/UART_DDR_wrapper.tcl"
+  variable script "C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.runs/synth_1/UART_DDR_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,86 +70,30 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config  -id {DRC UCIO-1}  -suppress 
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7a100tcsg324-1
+create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.xpr} [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+set_property webtalk.parent_dir {C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Users/luisr/AppData/Roaming/Xilinx/Vivado/2021.2/xhub/board_store/xilinx_board_store} [current_project]
-set_property board_part digilentinc.com:arty-a7-100:part0:1.0 [current_project]
-set_property ip_output_repo {c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.cache/ip} [current_project]
+set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
+set_property ip_output_repo {c:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {{C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/hdl/UART_DDR_wrapper.vhd}}
-add_files {{C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.srcs/sources_1/bd/UART_DDR/UART_DDR.bd}}
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_microblaze_0_0/UART_DDR_microblaze_0_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_microblaze_0_0/UART_DDR_microblaze_0_0_ooc_debug.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_microblaze_0_0/UART_DDR_microblaze_0_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_mig_7series_0_0/UART_DDR_mig_7series_0_0/user_design/constraints/UART_DDR_mig_7series_0_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_mig_7series_0_0/UART_DDR_mig_7series_0_0/user_design/constraints/UART_DDR_mig_7series_0_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_mig_7series_0_0/UART_DDR_mig_7series_0_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_clk_wiz_0_0/UART_DDR_clk_wiz_0_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_clk_wiz_0_0/UART_DDR_clk_wiz_0_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_clk_wiz_0_0/UART_DDR_clk_wiz_0_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_dlmb_v10_0/UART_DDR_dlmb_v10_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_ilmb_v10_0/UART_DDR_ilmb_v10_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_dlmb_bram_if_cntlr_0/UART_DDR_dlmb_bram_if_cntlr_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_ilmb_bram_if_cntlr_0/UART_DDR_ilmb_bram_if_cntlr_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_lmb_bram_0/UART_DDR_lmb_bram_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_mdm_1_0/UART_DDR_mdm_1_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_mdm_1_0/UART_DDR_mdm_1_0_ooc_trace.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_rst_mig_7series_0_83M_0/UART_DDR_rst_mig_7series_0_83M_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_rst_mig_7series_0_83M_0/UART_DDR_rst_mig_7series_0_83M_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_rst_mig_7series_0_83M_0/UART_DDR_rst_mig_7series_0_83M_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_1/bd_fd68_psr_aclk_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_1/bd_fd68_psr_aclk_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_2/bd_fd68_arsw_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_3/bd_fd68_rsw_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_4/bd_fd68_awsw_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_5/bd_fd68_wsw_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_6/bd_fd68_bsw_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_10/bd_fd68_s00a2s_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_11/bd_fd68_sarn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_12/bd_fd68_srn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_13/bd_fd68_sawn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_14/bd_fd68_swn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_15/bd_fd68_sbn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_19/bd_fd68_s01a2s_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_20/bd_fd68_sarn_1_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_21/bd_fd68_srn_1_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_25/bd_fd68_s02a2s_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_26/bd_fd68_sarn_2_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_27/bd_fd68_srn_2_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_28/bd_fd68_sawn_1_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_29/bd_fd68_swn_1_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_30/bd_fd68_sbn_1_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_31/bd_fd68_m00s2a_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_32/bd_fd68_m00arn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_33/bd_fd68_m00rn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_34/bd_fd68_m00awn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_35/bd_fd68_m00wn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_36/bd_fd68_m00bn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_38/bd_fd68_m01s2a_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_39/bd_fd68_m01arn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_40/bd_fd68_m01rn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_41/bd_fd68_m01awn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_42/bd_fd68_m01wn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/bd_0/ip/ip_43/bd_fd68_m01bn_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_smc_0/ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_uartlite_0_0/UART_DDR_axi_uartlite_0_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_uartlite_0_0/UART_DDR_axi_uartlite_0_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_axi_uartlite_0_0/UART_DDR_axi_uartlite_0_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/UART_DDR_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_microblaze_0_0/data/mb_bootloop_le.elf}}]
+read_vhdl -library xil_defaultlib {{C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/hdl/UART_DDR_wrapper.vhd}}
+add_files {{C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.srcs/sources_1/bd/UART_DDR/UART_DDR.bd}}
+set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/ip/UART_DDR_processing_system7_0_0/UART_DDR_processing_system7_0_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.gen/sources_1/bd/UART_DDR/UART_DDR_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -163,12 +107,10 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
-
-read_checkpoint -auto_incremental -incremental C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR/UART_DDR.srcs/utils_1/imports/synth_1/UART_DDR_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top UART_DDR_wrapper -part xc7a100tcsg324-1
+synth_design -top UART_DDR_wrapper -part xc7z020clg400-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

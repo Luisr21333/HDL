@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.runs/impl_1/UART_DDR_wrapper.tcl"
+  variable script "C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.runs/impl_1/UART_DDR_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config  -id {DRC UCIO-1}  -suppress 
 
 OPTRACE "impl_1" START { ROLLUP_1 }
@@ -125,31 +126,30 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
 OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7a100tcsg324-1
+  create_project -in_memory -part xc7z020clg400-1
   set_property board_part_repo_paths {C:/Users/luisr/AppData/Roaming/Xilinx/Vivado/2021.2/xhub/board_store/xilinx_board_store} [current_project]
-  set_property board_part digilentinc.com:arty-a7-100:part0:1.0 [current_project]
+  set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir {C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.runs/synth_1/UART_DDR_wrapper.dcp}}
+  add_files -quiet {{C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.runs/synth_1/UART_DDR_wrapper.dcp}}
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files {{C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/UART_DDR/UART_DDR.srcs/sources_1/bd/UART_DDR/UART_DDR.bd}}
+  add_files {{C:/Users/luisr/Desktop/FPGA/Hardware/Zybo Z7-20/UART_DDR/UART_DDR.srcs/sources_1/bd/UART_DDR/UART_DDR.bd}}
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
   set_param project.isImplRun true
-  link_design -top UART_DDR_wrapper -part xc7a100tcsg324-1 
+  link_design -top UART_DDR_wrapper -part xc7z020clg400-1 
 OPTRACE "link_design" END { }
   set_param project.isImplRun false
 OPTRACE "gray box cells" START { }
@@ -311,9 +311,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
-  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi UART_DDR_wrapper.mmi }
-  catch { write_bmm -force UART_DDR_wrapper_bd.bmm }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
   write_bitstream -force UART_DDR_wrapper.bit 
