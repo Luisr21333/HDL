@@ -1,0 +1,6 @@
+12:56:41 **** Incremental Build of configuration Debug for project UART_DDR ****
+make all 
+make: Nothing to be done for 'all'.
+
+12:56:41 Build Finished (took 114ms)
+

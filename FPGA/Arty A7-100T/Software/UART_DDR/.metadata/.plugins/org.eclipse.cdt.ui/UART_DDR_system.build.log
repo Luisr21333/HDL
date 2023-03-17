@@ -1,0 +1,6 @@
+12:56:41 **** Incremental Build of configuration Debug for project UART_DDR_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+12:56:41 Build Finished (took 121ms)
+
