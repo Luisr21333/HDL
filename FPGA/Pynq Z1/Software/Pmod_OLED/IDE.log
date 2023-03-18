@@ -1,0 +1,221 @@
+18:06:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\FPGA\Software\Pynq_Z1\Pmod_OLED\temp_xsdb_launch_script.tcl
+18:06:53 INFO  : XSCT server has started successfully.
+18:06:53 INFO  : Successfully done setting XSCT server connection channel  
+18:06:53 INFO  : plnx-install-location is set to ''
+18:06:53 INFO  : Successfully done setting workspace for the tool. 
+18:07:09 INFO  : Platform repository initialization has completed.
+18:07:09 INFO  : Registering command handlers for Vitis TCF services
+18:07:12 INFO  : Successfully done query RDI_DATADIR 
+18:08:29 INFO  : Result from executing command 'getProjects': Pmod_OLED_wrapper
+18:08:29 INFO  : Result from executing command 'getPlatforms': 
+18:08:30 WARN  : An unexpected exception occurred in the module 'platform project logging'
+18:08:30 INFO  : Platform 'Pmod_OLED_wrapper' is added to custom repositories.
+18:08:57 INFO  : Platform 'Pmod_OLED_wrapper' is added to custom repositories.
+18:09:46 INFO  : Result from executing command 'getProjects': Pmod_OLED_wrapper
+18:09:46 INFO  : Result from executing command 'getPlatforms': Pmod_OLED_wrapper|C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED_wrapper/export/Pmod_OLED_wrapper/Pmod_OLED_wrapper.xpfm
+18:09:47 INFO  : Checking for BSP changes to sync application flags for project 'Pmod_OLED'...
+18:10:01 INFO  : Checking for BSP changes to sync application flags for project 'Pmod_OLED'...
+18:10:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:10:13 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017B5C7FEA' is selected.
+18:10:13 INFO  : 'jtag frequency' command is executed.
+18:10:13 INFO  : Context for 'APU' is selected.
+18:10:13 INFO  : System reset is completed.
+18:10:16 INFO  : 'after 3000' command is executed.
+18:10:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B5C7FEA" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B5C7FEA-23727093-0"}' command is executed.
+18:10:19 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/bitstream/Pmod_OLED_wrapper.bit"
+18:10:19 INFO  : Context for 'APU' is selected.
+18:10:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED_wrapper/export/Pmod_OLED_wrapper/hw/Pmod_OLED_wrapper.xsa'.
+18:10:19 INFO  : 'configparams force-mem-access 1' command is executed.
+18:10:19 INFO  : Context for 'APU' is selected.
+18:10:19 INFO  : Sourcing of 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/psinit/ps7_init.tcl' is done.
+18:10:21 INFO  : 'ps7_init' command is executed.
+18:10:21 INFO  : 'ps7_post_config' command is executed.
+18:10:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:10:22 INFO  : The application 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/Debug/Pmod_OLED.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:10:22 INFO  : 'configparams force-mem-access 0' command is executed.
+18:10:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B5C7FEA" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B5C7FEA-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/bitstream/Pmod_OLED_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED_wrapper/export/Pmod_OLED_wrapper/hw/Pmod_OLED_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/Debug/Pmod_OLED.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:10:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:10:22 INFO  : 'con' command is executed.
+18:10:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:10:22 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\FPGA\Software\Pynq_Z1\Pmod_OLED\Pmod_OLED_system\_ide\scripts\debugger_pmod_oled-default.tcl'
+18:33:37 INFO  : Hardware specification for platform project 'Pmod_OLED_wrapper' is updated.
+18:33:55 INFO  : Result from executing command 'getProjects': Pmod_OLED_wrapper
+18:33:55 INFO  : Result from executing command 'getPlatforms': Pmod_OLED_wrapper|C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED_wrapper/export/Pmod_OLED_wrapper/Pmod_OLED_wrapper.xpfm
+18:34:21 INFO  : Disconnected from the channel tcfchan#4.
+18:34:22 INFO  : The hardware specification used by project 'Pmod_OLED' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+18:34:22 INFO  : The file 'C:\Users\luisr\Desktop\FPGA\Software\Pynq_Z1\Pmod_OLED\Pmod_OLED\_ide\bitstream\Pmod_OLED_wrapper.bit' stored in project is removed.
+18:34:23 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\luisr\Desktop\FPGA\Software\Pynq_Z1\Pmod_OLED\Pmod_OLED\_ide\bitstream' in project 'Pmod_OLED'.
+18:34:23 INFO  : The file 'C:\Users\luisr\Desktop\FPGA\Software\Pynq_Z1\Pmod_OLED\Pmod_OLED\_ide\psinit\ps7_init.tcl' stored in project is removed.
+18:34:34 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\luisr\Desktop\FPGA\Software\Pynq_Z1\Pmod_OLED\Pmod_OLED\_ide\psinit' in project 'Pmod_OLED'.
+18:34:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:34:37 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017B5C7FEA' is selected.
+18:34:37 INFO  : 'jtag frequency' command is executed.
+18:34:37 INFO  : Context for 'APU' is selected.
+18:34:37 INFO  : System reset is completed.
+18:34:40 INFO  : 'after 3000' command is executed.
+18:34:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B5C7FEA" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B5C7FEA-23727093-0"}' command is executed.
+18:34:46 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/bitstream/Pmod_OLED_wrapper.bit"
+18:34:46 INFO  : Context for 'APU' is selected.
+18:34:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED_wrapper/export/Pmod_OLED_wrapper/hw/Pmod_OLED_wrapper.xsa'.
+18:34:46 INFO  : 'configparams force-mem-access 1' command is executed.
+18:34:46 INFO  : Context for 'APU' is selected.
+18:34:46 INFO  : Sourcing of 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/psinit/ps7_init.tcl' is done.
+18:34:47 INFO  : 'ps7_init' command is executed.
+18:34:47 INFO  : 'ps7_post_config' command is executed.
+18:34:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:34:48 INFO  : The application 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/Debug/Pmod_OLED.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:34:48 INFO  : 'configparams force-mem-access 0' command is executed.
+18:34:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B5C7FEA" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B5C7FEA-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/bitstream/Pmod_OLED_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED_wrapper/export/Pmod_OLED_wrapper/hw/Pmod_OLED_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/Debug/Pmod_OLED.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:34:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:34:48 INFO  : 'con' command is executed.
+18:34:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:34:48 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\FPGA\Software\Pynq_Z1\Pmod_OLED\Pmod_OLED_system\_ide\scripts\debugger_pmod_oled-default.tcl'
+18:35:51 INFO  : Checking for BSP changes to sync application flags for project 'Pmod_OLED'...
+18:36:06 INFO  : Checking for BSP changes to sync application flags for project 'Pmod_OLED'...
+18:36:18 INFO  : Disconnected from the channel tcfchan#6.
+18:36:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:36:19 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017B5C7FEA' is selected.
+18:36:19 INFO  : 'jtag frequency' command is executed.
+18:36:19 INFO  : Context for 'APU' is selected.
+18:36:19 INFO  : System reset is completed.
+18:36:22 INFO  : 'after 3000' command is executed.
+18:36:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B5C7FEA" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B5C7FEA-23727093-0"}' command is executed.
+18:36:24 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/bitstream/Pmod_OLED_wrapper.bit"
+18:36:25 INFO  : Context for 'APU' is selected.
+18:36:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED_wrapper/export/Pmod_OLED_wrapper/hw/Pmod_OLED_wrapper.xsa'.
+18:36:25 INFO  : 'configparams force-mem-access 1' command is executed.
+18:36:25 INFO  : Context for 'APU' is selected.
+18:36:25 INFO  : Sourcing of 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/psinit/ps7_init.tcl' is done.
+18:36:26 INFO  : 'ps7_init' command is executed.
+18:36:26 INFO  : 'ps7_post_config' command is executed.
+18:36:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:36:26 INFO  : The application 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/Debug/Pmod_OLED.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:36:26 INFO  : 'configparams force-mem-access 0' command is executed.
+18:36:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B5C7FEA" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B5C7FEA-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/bitstream/Pmod_OLED_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED_wrapper/export/Pmod_OLED_wrapper/hw/Pmod_OLED_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/Debug/Pmod_OLED.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:36:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:36:26 INFO  : 'con' command is executed.
+18:36:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:36:26 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\FPGA\Software\Pynq_Z1\Pmod_OLED\Pmod_OLED_system\_ide\scripts\debugger_pmod_oled-default.tcl'
+18:37:19 INFO  : Checking for BSP changes to sync application flags for project 'Pmod_OLED'...
+18:37:29 INFO  : Checking for BSP changes to sync application flags for project 'Pmod_OLED'...
+18:37:48 INFO  : Disconnected from the channel tcfchan#9.
+18:37:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:37:49 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017B5C7FEA' is selected.
+18:37:49 ERROR : port closed
+18:37:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:37:49 ERROR : port closed
+18:37:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:37:54 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017B5C7FEA' is selected.
+18:37:54 INFO  : 'jtag frequency' command is executed.
+18:37:54 INFO  : Context for 'APU' is selected.
+18:37:54 INFO  : System reset is completed.
+18:37:57 INFO  : 'after 3000' command is executed.
+18:37:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B5C7FEA" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B5C7FEA-23727093-0"}' command is executed.
+18:38:00 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/bitstream/Pmod_OLED_wrapper.bit"
+18:38:00 INFO  : Context for 'APU' is selected.
+18:38:00 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED_wrapper/export/Pmod_OLED_wrapper/hw/Pmod_OLED_wrapper.xsa'.
+18:38:00 INFO  : 'configparams force-mem-access 1' command is executed.
+18:38:00 INFO  : Context for 'APU' is selected.
+18:38:00 INFO  : Sourcing of 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/psinit/ps7_init.tcl' is done.
+18:38:01 INFO  : 'ps7_init' command is executed.
+18:38:01 INFO  : 'ps7_post_config' command is executed.
+18:38:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:38:01 INFO  : The application 'C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/Debug/Pmod_OLED.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:38:01 INFO  : 'configparams force-mem-access 0' command is executed.
+18:38:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B5C7FEA" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B5C7FEA-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/bitstream/Pmod_OLED_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED_wrapper/export/Pmod_OLED_wrapper/hw/Pmod_OLED_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/FPGA/Software/Pynq_Z1/Pmod_OLED/Pmod_OLED/Debug/Pmod_OLED.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:38:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:38:01 INFO  : 'con' command is executed.
+18:38:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:38:01 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\FPGA\Software\Pynq_Z1\Pmod_OLED\Pmod_OLED_system\_ide\scripts\debugger_pmod_oled-default.tcl'
+18:38:52 INFO  : Disconnected from the channel tcfchan#12.
