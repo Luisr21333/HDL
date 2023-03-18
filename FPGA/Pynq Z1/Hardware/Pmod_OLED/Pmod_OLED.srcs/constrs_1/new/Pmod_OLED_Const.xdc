@@ -1,0 +1,18 @@
+# PmodA connects to Pmod OLED
+set_property PACKAGE_PIN Y18 [get_ports Pmod_out_pin1_io]
+set_property PACKAGE_PIN Y19 [get_ports Pmod_out_pin2_io]
+set_property PACKAGE_PIN Y16 [get_ports Pmod_out_pin3_io]
+set_property PACKAGE_PIN Y17 [get_ports Pmod_out_pin4_io]
+set_property PACKAGE_PIN U18 [get_ports Pmod_out_pin7_io]
+set_property PACKAGE_PIN U19 [get_ports Pmod_out_pin8_io]
+set_property PACKAGE_PIN W18 [get_ports Pmod_out_pin9_io]
+set_property PACKAGE_PIN W19 [get_ports Pmod_out_pin10_io]
+
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_pin1_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_pin2_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_pin3_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_pin4_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_pin7_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_pin8_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_pin9_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_pin10_io]
