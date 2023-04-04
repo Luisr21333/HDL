@@ -1,0 +1,21 @@
+#Pmod JB connects to Pmod TC1
+set_property PACKAGE_PIN E15 [get_ports Pmod_out_0_pin1_io]
+set_property PACKAGE_PIN E16 [get_ports Pmod_out_0_pin2_io]
+set_property PACKAGE_PIN D15 [get_ports Pmod_out_0_pin3_io]
+set_property PACKAGE_PIN C15 [get_ports Pmod_out_0_pin4_io]
+set_property PACKAGE_PIN J17 [get_ports Pmod_out_0_pin7_io]
+set_property PACKAGE_PIN J18 [get_ports Pmod_out_0_pin8_io]
+set_property PACKAGE_PIN K15 [get_ports Pmod_out_0_pin9_io]
+set_property PACKAGE_PIN J15 [get_ports Pmod_out_0_pin10_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin1_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin2_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin3_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin4_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin7_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin8_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin9_io]
+set_property IOSTANDARD LVCMOS33 [get_ports Pmod_out_0_pin10_io]
+
+#reset signal active low 
+set_property PACKAGE_PIN C2 [get_ports resetn_0]
+set_property IOSTANDARD LVCMOS33 [get_ports reset]

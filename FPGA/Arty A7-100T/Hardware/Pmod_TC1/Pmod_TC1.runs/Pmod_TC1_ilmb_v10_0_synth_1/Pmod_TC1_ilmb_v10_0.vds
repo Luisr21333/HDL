@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Apr  3 19:02:44 2023
+# Process ID: 17416
+# Current directory: C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/Pmod_TC1/Pmod_TC1.runs/Pmod_TC1_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log Pmod_TC1_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pmod_TC1_ilmb_v10_0.tcl
+# Log file: C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/Pmod_TC1/Pmod_TC1.runs/Pmod_TC1_ilmb_v10_0_synth_1/Pmod_TC1_ilmb_v10_0.vds
+# Journal file: C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/Pmod_TC1/Pmod_TC1.runs/Pmod_TC1_ilmb_v10_0_synth_1\vivado.jou
+# Running On: DESKTOP-AJV8A0J, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16855 MB
+#-----------------------------------------------------------
+source Pmod_TC1_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1542.773 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/luisr/Desktop/Vivado Stuff/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.773 ; gain = 0.000
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Pmod_TC1_ilmb_v10_0, cache-ID = 209fed97a5806ce3.
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  3 19:03:24 2023...
