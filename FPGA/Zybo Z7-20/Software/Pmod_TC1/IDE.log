@@ -1,0 +1,170 @@
+18:30:43 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\FPGA\Software\Zybo_Z7-20\Pmod_TC1\temp_xsdb_launch_script.tcl
+18:31:16 INFO  : XSCT server has started successfully.
+18:31:16 INFO  : plnx-install-location is set to ''
+18:31:16 INFO  : Successfully done setting XSCT server connection channel  
+18:31:16 INFO  : Successfully done setting workspace for the tool. 
+18:31:33 INFO  : Platform repository initialization has completed.
+18:31:34 INFO  : Registering command handlers for Vitis TCF services
+18:31:40 INFO  : Successfully done query RDI_DATADIR 
+18:33:27 INFO  : Result from executing command 'getProjects': Pmod_TC1_wrapper
+18:33:27 INFO  : Result from executing command 'getPlatforms': 
+18:33:27 WARN  : An unexpected exception occurred in the module 'platform project logging'
+18:33:28 INFO  : Platform 'Pmod_TC1_wrapper' is added to custom repositories.
+18:33:47 INFO  : Platform 'Pmod_TC1_wrapper' is added to custom repositories.
+18:34:46 INFO  : Result from executing command 'getProjects': Pmod_TC1_wrapper
+18:34:46 INFO  : Result from executing command 'getPlatforms': Pmod_TC1_wrapper|C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1_wrapper/export/Pmod_TC1_wrapper/Pmod_TC1_wrapper.xpfm
+18:34:47 INFO  : Checking for BSP changes to sync application flags for project 'Pmod_TC1'...
+18:35:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:35:54 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+18:36:03 INFO  : 'jtag frequency' command is executed.
+18:36:03 INFO  : Context for 'APU' is selected.
+18:36:03 INFO  : System reset is completed.
+18:36:06 INFO  : 'after 3000' command is executed.
+18:36:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+18:36:14 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/bitstream/Pmod_TC1_wrapper.bit"
+18:36:14 INFO  : Context for 'APU' is selected.
+18:36:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1_wrapper/export/Pmod_TC1_wrapper/hw/Pmod_TC1_wrapper.xsa'.
+18:36:23 INFO  : 'configparams force-mem-access 1' command is executed.
+18:36:23 INFO  : Context for 'APU' is selected.
+18:36:23 INFO  : Sourcing of 'C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/psinit/ps7_init.tcl' is done.
+18:37:56 ERROR : Unexpected exception occurred.
+java.io.IOException: Command [C 98 xsdb eval "ps7_init"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:844)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)
+18:37:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/bitstream/Pmod_TC1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1_wrapper/export/Pmod_TC1_wrapper/hw/Pmod_TC1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+18:37:56 ERROR : Unexpected exception occurred.
+18:41:55 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\FPGA\Software\Zybo_Z7-20\Pmod_TC1\temp_xsdb_launch_script.tcl
+18:42:00 INFO  : XSCT server has started successfully.
+18:42:00 INFO  : plnx-install-location is set to ''
+18:42:00 INFO  : Successfully done setting XSCT server connection channel  
+18:42:00 INFO  : Successfully done setting workspace for the tool. 
+18:42:18 INFO  : Platform repository initialization has completed.
+18:42:22 INFO  : Registering command handlers for Vitis TCF services
+18:42:28 INFO  : Successfully done query RDI_DATADIR 
+18:42:55 INFO  : Result from executing command 'getProjects': Pmod_TC1_wrapper
+18:42:55 INFO  : Result from executing command 'getPlatforms': Pmod_TC1_wrapper|C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1_wrapper/export/Pmod_TC1_wrapper/Pmod_TC1_wrapper.xpfm
+18:42:56 INFO  : Checking for BSP changes to sync application flags for project 'Pmod_TC1'...
+18:43:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:43:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+18:43:15 INFO  : 'jtag frequency' command is executed.
+18:43:15 INFO  : Context for 'APU' is selected.
+18:43:15 INFO  : System reset is completed.
+18:43:18 INFO  : 'after 3000' command is executed.
+18:43:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+18:43:21 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/bitstream/Pmod_TC1_wrapper.bit"
+18:43:21 INFO  : Context for 'APU' is selected.
+18:43:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1_wrapper/export/Pmod_TC1_wrapper/hw/Pmod_TC1_wrapper.xsa'.
+18:43:21 INFO  : 'configparams force-mem-access 1' command is executed.
+18:43:21 INFO  : Context for 'APU' is selected.
+18:43:21 INFO  : Sourcing of 'C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/psinit/ps7_init.tcl' is done.
+18:43:22 INFO  : 'ps7_init' command is executed.
+18:43:22 INFO  : 'ps7_post_config' command is executed.
+18:43:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:43:22 INFO  : The application 'C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/Debug/Pmod_TC1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:43:22 INFO  : 'configparams force-mem-access 0' command is executed.
+18:43:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/bitstream/Pmod_TC1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1_wrapper/export/Pmod_TC1_wrapper/hw/Pmod_TC1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/Debug/Pmod_TC1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:43:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:43:23 INFO  : 'con' command is executed.
+18:43:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:43:23 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\FPGA\Software\Zybo_Z7-20\Pmod_TC1\Pmod_TC1_system\_ide\scripts\debugger_pmod_tc1-default.tcl'
+18:44:18 INFO  : Checking for BSP changes to sync application flags for project 'Pmod_TC1'...
+18:44:30 INFO  : Disconnected from the channel tcfchan#3.
+18:44:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:44:31 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+18:44:31 ERROR : port closed
+18:44:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:44:31 ERROR : port closed
+18:44:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:44:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+18:44:37 INFO  : 'jtag frequency' command is executed.
+18:44:37 INFO  : Context for 'APU' is selected.
+18:44:37 INFO  : System reset is completed.
+18:44:40 INFO  : 'after 3000' command is executed.
+18:44:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+18:44:42 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/bitstream/Pmod_TC1_wrapper.bit"
+18:44:43 INFO  : Context for 'APU' is selected.
+18:44:43 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1_wrapper/export/Pmod_TC1_wrapper/hw/Pmod_TC1_wrapper.xsa'.
+18:44:43 INFO  : 'configparams force-mem-access 1' command is executed.
+18:44:43 INFO  : Context for 'APU' is selected.
+18:44:43 INFO  : Sourcing of 'C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/psinit/ps7_init.tcl' is done.
+18:44:44 INFO  : 'ps7_init' command is executed.
+18:44:44 INFO  : 'ps7_post_config' command is executed.
+18:44:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:44:44 INFO  : The application 'C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/Debug/Pmod_TC1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:44:44 INFO  : 'configparams force-mem-access 0' command is executed.
+18:44:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/bitstream/Pmod_TC1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1_wrapper/export/Pmod_TC1_wrapper/hw/Pmod_TC1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Pmod_TC1/Pmod_TC1/Debug/Pmod_TC1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:44:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:44:44 INFO  : 'con' command is executed.
+18:44:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:44:44 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\FPGA\Software\Zybo_Z7-20\Pmod_TC1\Pmod_TC1_system\_ide\scripts\debugger_pmod_tc1-default.tcl'
