@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Pmod_OLED" location="C:/Users/luisr/Desktop/FPGA/Software/Arty_A7-100T/Pmod_OLED/Pmod_OLED" platform="C:/Users/luisr/Desktop/FPGA/Software/Arty_A7-100T/Pmod_OLED/Pmod_OLED_wrapper/export/Pmod_OLED_wrapper/Pmod_OLED_wrapper.xpfm" platformUID="xilinx:arty-a7-100::0.0(custom)" systemProject="Pmod_OLED_system" sysConfig="Pmod_OLED_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="bc6eeb5e8bad0de61913ed67525d62b6">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1083371903">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1863417557" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

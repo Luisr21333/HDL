@@ -1,0 +1,8 @@
+Nothing to build in platform 'Pmod_OLED_wrapper'
+
+19:54:36 **** Incremental Build of configuration Debug for project Pmod_OLED ****
+make all 
+make: Nothing to be done for 'all'.
+19:54:37 **** Incremental Build of configuration Debug for project Pmod_OLED_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
