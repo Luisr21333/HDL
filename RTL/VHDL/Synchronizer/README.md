@@ -3,7 +3,7 @@
 - **File**: Synchronizer.vhd
 ## Diagram
 
-![Diagram](README.svg "Diagram")
+![image](Synchronizer.png)
 ## Ports
 
 | Port name | Direction | Type      | Description |
