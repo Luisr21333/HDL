@@ -16,7 +16,7 @@ end entity;
 
 architecture behavioral of Priority_Encoder is
 begin
-  process (input)
+  Priority_Encoding_Process: process (input)
     variable index: integer range 0 to N-1 := -1;
   begin
     index := -1;
