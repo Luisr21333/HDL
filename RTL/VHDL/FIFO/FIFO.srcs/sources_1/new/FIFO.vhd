@@ -29,7 +29,7 @@ signal read_ptr: integer range 0 to depth-1 := 0;
 signal write_ptr: integer range 0 to depth-1 := 0;
 signal count: integer range 0 to depth := 0;
 begin
-    process (clk)
+    FIFO_Process: process (clk)
     begin
         if rising_edge(clk) then
             if rst = '1' then -- synchronous active high reset
