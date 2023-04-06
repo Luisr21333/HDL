@@ -3,7 +3,7 @@
 - **File**: Neg_Edge_Detector.vhd
 ## Diagram
 
-![image](Neg_Edge_Detector.png)
+![image](Negative_Edge_Detector.png)
 ## Ports
 
 | Port name             | Direction | Type      | Description |
@@ -17,4 +17,4 @@
 | -------- | --------- | ----------- |
 | prev_clk | std_logic |             |
 ## Processes
-- unnamed: ( clk, reset )
+- Falling_Edge_Detection_Process: ( clk, reset )
