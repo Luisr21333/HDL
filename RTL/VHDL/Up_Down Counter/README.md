@@ -4,7 +4,6 @@
 ## Diagram
 
 ![image](Up_Down_Counter.png)
-
 ## Generics
 
 | Generic name | Type    | Value | Description |
@@ -24,4 +23,4 @@
 | ------- | -------------------------- | ----------- |
 | counter | unsigned(WIDTH-1 downto 0) |             |
 ## Processes
-- unnamed: ( clk, reset )
+- Counter_Process: ( clk, reset )
