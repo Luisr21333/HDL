@@ -16,7 +16,7 @@ end entity;
 
 architecture behavioral of Decoder is
 begin
-  process (input)
+  Decoding_Process: process (input)
   begin
     --using case statement to decode each input 
     case to_integer(unsigned(input)) is
