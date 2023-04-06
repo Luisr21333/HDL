@@ -2,8 +2,8 @@
 
 - **File**: FIFO.vhd
 ## Diagram
-![image](FIFO.png)
 
+![Diagram](README.svg "Diagram")
 ## Generics
 
 | Generic name | Type     | Value | Description |
@@ -36,4 +36,4 @@
 | -------- | ---- | ----------- |
 | mem_type |      |             |
 ## Processes
-- unnamed: ( clk )
+- FIFO_Process: ( clk )
