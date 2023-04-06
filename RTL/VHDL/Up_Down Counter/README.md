@@ -23,4 +23,4 @@
 | ------- | -------------------------- | ----------- |
 | counter | unsigned(WIDTH-1 downto 0) |             |
 ## Processes
-- Counter_Process: ( clk, reset )
+- Up_Down_Counter_Process: ( clk, reset )
