@@ -14,7 +14,7 @@ end entity Neg_Edge_Detector;
 architecture behavioral of Neg_Edge_Detector is
   signal prev_clk : std_logic := '0';
 begin
-  process (clk, reset)
+  Falling_Edge_Detection_Process: process (clk, reset)
   begin
     -- asynchronous active high reset
     if reset = '1' then
