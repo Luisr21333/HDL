@@ -4,17 +4,19 @@ use ieee.std_logic_1164.all;
 -- parameterized Ring Counter  
 entity Ring_Counter is
     generic (
-        WIDTH : integer := 4
+      WIDTH : integer := 4
     );
-    Port ( clk : in  STD_LOGIC;
-           rst : in  STD_LOGIC;
-           Q : out  STD_LOGIC_VECTOR (WIDTH-1 downto 0));
+    port (
+      clk : in std_logic;
+      rst : in std_logic;
+      Q : out std_logic_vector(WIDTH-1 downto 0)
+    );
 end Ring_Counter;
  
 architecture behavioral of Ring_Counter is
 signal q_tmp: std_logic_vector(WIDTH-1 downto 0):= "0000";
 begin
-    process(clk,rst)
+    Ring_Counter_Process: process(clk,rst)
     begin
     -- asynchronous active high reset
     if rst = '1' then
