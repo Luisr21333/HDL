@@ -3,7 +3,7 @@
 - **File**: Synchronizer.vhd
 ## Diagram
 
-![image](Synchronizer.png)
+![Diagram](README.svg "Diagram")
 ## Ports
 
 | Port name | Direction | Type      | Description |
@@ -17,5 +17,5 @@
 | ------------- | --------- | ----------- |
 | delayed_async | std_logic |             |
 ## Processes
-- unnamed: ( clk )
-- unnamed: ( clk )
+- Delay_Process: ( clk )
+- Synchronize_Process: ( clk )
