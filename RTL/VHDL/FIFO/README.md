@@ -2,7 +2,7 @@
 
 - **File**: FIFO.vhd
 ## Diagram
-![image](https://user-images.githubusercontent.com/91759964/230260760-3a00c7a9-21b5-49e6-af37-74a2107b2861.png)
+![image](FIFO.png)
 
 ## Generics
 
