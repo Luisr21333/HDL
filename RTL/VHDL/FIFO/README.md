@@ -3,7 +3,7 @@
 - **File**: FIFO.vhd
 ## Diagram
 
-![image](README.png)
+![image](FIFO.png)
 ## Generics
 
 | Generic name | Type     | Value | Description |
