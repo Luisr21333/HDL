@@ -4,7 +4,6 @@
 ## Diagram
 
 ![image](RAM.png)
-
 ## Generics
 
 | Generic name | Type     | Value | Description |
@@ -33,4 +32,4 @@
 | --------- | ---- | ----------- |
 | mem_array |      |             |
 ## Processes
-- unnamed: ( clk, rst )
+- RAM_Process: ( clk, rst )
