@@ -18,7 +18,7 @@ end entity;
 architecture behavioral of Up_Down_Counter is
 signal counter : unsigned(WIDTH-1 downto 0);
 begin
-  Counter_Process: process (clk, reset)
+  Up_Down_Counter_Process: process (clk, reset)
   begin
   -- asynchronous active high reset
     if reset = '1' then
