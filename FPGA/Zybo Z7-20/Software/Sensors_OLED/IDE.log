@@ -1,0 +1,62 @@
+18:17:28 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\FPGA\Software\Zybo_Z7-20\Sensors_OLED\temp_xsdb_launch_script.tcl
+18:17:32 INFO  : XSCT server has started successfully.
+18:17:33 INFO  : Successfully done setting XSCT server connection channel  
+18:17:33 INFO  : plnx-install-location is set to ''
+18:17:33 INFO  : Successfully done setting workspace for the tool. 
+18:17:51 INFO  : Platform repository initialization has completed.
+18:17:51 INFO  : Registering command handlers for Vitis TCF services
+18:17:59 INFO  : Successfully done query RDI_DATADIR 
+18:21:20 INFO  : Result from executing command 'getProjects': Sensors_OLED_wrapper
+18:21:20 INFO  : Result from executing command 'getPlatforms': 
+18:21:20 WARN  : An unexpected exception occurred in the module 'platform project logging'
+18:21:20 INFO  : Platform 'Sensors_OLED_wrapper' is added to custom repositories.
+18:21:31 INFO  : Platform 'Sensors_OLED_wrapper' is added to custom repositories.
+18:22:44 INFO  : Result from executing command 'getProjects': Sensors_OLED_wrapper
+18:22:44 INFO  : Result from executing command 'getPlatforms': Sensors_OLED_wrapper|C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Sensors_OLED/Sensors_OLED_wrapper/export/Sensors_OLED_wrapper/Sensors_OLED_wrapper.xpfm
+18:22:44 INFO  : Checking for BSP changes to sync application flags for project 'Sensors_OLED'...
+18:22:59 INFO  : Checking for BSP changes to sync application flags for project 'Sensors_OLED'...
+18:25:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:25:42 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+18:25:42 INFO  : 'jtag frequency' command is executed.
+18:25:42 INFO  : Context for 'APU' is selected.
+18:25:42 INFO  : System reset is completed.
+18:25:45 INFO  : 'after 3000' command is executed.
+18:25:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+18:25:48 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Sensors_OLED/Sensors_OLED/_ide/bitstream/Sensors_OLED_wrapper.bit"
+18:25:48 INFO  : Context for 'APU' is selected.
+18:25:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Sensors_OLED/Sensors_OLED_wrapper/export/Sensors_OLED_wrapper/hw/Sensors_OLED_wrapper.xsa'.
+18:25:48 INFO  : 'configparams force-mem-access 1' command is executed.
+18:25:48 INFO  : Context for 'APU' is selected.
+18:25:48 INFO  : Sourcing of 'C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Sensors_OLED/Sensors_OLED/_ide/psinit/ps7_init.tcl' is done.
+18:25:48 INFO  : 'ps7_init' command is executed.
+18:25:48 INFO  : 'ps7_post_config' command is executed.
+18:25:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:25:49 INFO  : The application 'C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Sensors_OLED/Sensors_OLED/Debug/Sensors_OLED.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:25:49 INFO  : 'configparams force-mem-access 0' command is executed.
+18:25:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Sensors_OLED/Sensors_OLED/_ide/bitstream/Sensors_OLED_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Sensors_OLED/Sensors_OLED_wrapper/export/Sensors_OLED_wrapper/hw/Sensors_OLED_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Sensors_OLED/Sensors_OLED/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/FPGA/Software/Zybo_Z7-20/Sensors_OLED/Sensors_OLED/Debug/Sensors_OLED.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:25:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:25:49 INFO  : 'con' command is executed.
+18:25:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:25:49 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\FPGA\Software\Zybo_Z7-20\Sensors_OLED\Sensors_OLED_system\_ide\scripts\debugger_sensors_oled-default.tcl'
