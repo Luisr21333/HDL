@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="GPIO_system-bitFile" value="${project_loc:GPIO}/_ide/bitstream/GPIO_wrapper.bit"/>
+	<item key="GPIO_system-bmmFile" value="${project_loc:GPIO}/_ide/bitstream/GPIO_wrapper.mmi"/>
+	<item key="GPIO_system-target" value="Local"/>
+	<item key="GPIO_system-device" value="Auto Detect"/>
+	<item key="GPIO_system-partial_bit" value="false"/>
+	<item key="GPIO_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="GPIO_system"/>
+	<item key="GPIO_system-microblaze_0-initElf" value="bootloop"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent JTAG-SMT2NC 210308B0AABB&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-JTAG-SMT2NC-210308B0AABB-13822093-0&quot;}}]}"/>
+</section>

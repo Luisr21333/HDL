@@ -1,0 +1,69 @@
+timestamp=[2023-04-24 12:13:38], mode=WORKBENCH_START, duration=0:00:05.580, duration_ms=5580, data={}
+timestamp=[2023-04-24 12:13:38], mode=WORKBENCH_UI_INIT, duration=0:00:00.332, duration_ms=332, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-04-24 12:14:22], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.126, duration_ms=126, data={}
+timestamp=[2023-04-24 12:16:58], mode=APP_CREATION, duration=0:00:05.681, duration_ms=5681, data={name=GPIO, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=GPIO_wrapper, application_type=application}
+timestamp=[2023-04-24 12:28:24], mode=PLATFORM_GENERATION, duration=0:00:03.360, duration_ms=3360, data={name=GPIO_wrapper}
+timestamp=[2023-04-24 12:28:49], mode=PLATFORM_GENERATION, duration=0:00:11.985, duration_ms=11985, data={name=GPIO_wrapper}
+timestamp=[2023-04-24 12:28:53], mode=BUILD, duration=0:00:04.262, duration_ms=4262, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 12:28:54], mode=BUILD, duration=0:00:00.256, duration_ms=256, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 12:41:20], mode=BUILD, duration=0:00:00.996, duration_ms=996, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 12:41:20], mode=BUILD, duration=0:00:00.116, duration_ms=116, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 12:41:46], mode=BUILD, duration=0:00:00.137, duration_ms=137, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 12:41:46], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 12:45:35], mode=BUILD, duration=0:00:00.703, duration_ms=703, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 12:47:23], mode=BUILD, duration=0:00:00.127, duration_ms=127, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 12:47:30], mode=BUILD, duration=0:00:00.697, duration_ms=697, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 12:49:17], mode=WORKBENCH_START, duration=0:00:07.534, duration_ms=7534, data={}
+timestamp=[2023-04-24 12:49:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.706, duration_ms=706, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GPIO,GPIO_system,GPIO_wrapper,RemoteSystemsTempFiles}
+timestamp=[2023-04-24 12:49:27], mode=PLATFORM_GENERATION, duration=0:00:04.083, duration_ms=4083, data={name=GPIO_wrapper}
+timestamp=[2023-04-24 12:50:26], mode=WORKBENCH_START, duration=0:00:09.545, duration_ms=9545, data={}
+timestamp=[2023-04-24 12:50:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.654, duration_ms=654, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GPIO,GPIO_system,GPIO_wrapper,RemoteSystemsTempFiles}
+timestamp=[2023-04-24 12:50:41], mode=PLATFORM_GENERATION, duration=0:00:03.812, duration_ms=3812, data={name=GPIO_wrapper}
+timestamp=[2023-04-24 12:50:50], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.124, duration_ms=124, data={}
+timestamp=[2023-04-24 12:52:45], mode=PLATFORM_GENERATION, duration=0:00:52.534, duration_ms=52534, data={name=GPIO_wrapper}
+timestamp=[2023-04-24 12:54:37], mode=WORKBENCH_START, duration=0:00:08.207, duration_ms=8207, data={}
+timestamp=[2023-04-24 12:54:38], mode=WORKBENCH_UI_INIT, duration=0:00:00.638, duration_ms=638, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GPIO,GPIO_system,GPIO_wrapper,RemoteSystemsTempFiles}
+timestamp=[2023-04-24 12:54:58], mode=PLATFORM_GENERATION, duration=0:00:08.727, duration_ms=8727, data={name=GPIO_wrapper}
+timestamp=[2023-04-24 12:55:00], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.100, duration_ms=100, data={}
+timestamp=[2023-04-24 13:00:49], mode=PLATFORM_GENERATION, duration=0:01:58.828, duration_ms=118828, data={name=GPIO_wrapper}
+timestamp=[2023-04-24 13:03:27], mode=WORKBENCH_START, duration=0:00:08.557, duration_ms=8557, data={}
+timestamp=[2023-04-24 13:03:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.729, duration_ms=729, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GPIO,GPIO_system,GPIO_wrapper,RemoteSystemsTempFiles}
+timestamp=[2023-04-24 13:04:11], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.067, duration_ms=67, data={}
+timestamp=[2023-04-24 13:05:59], mode=PLATFORM_GENERATION, duration=0:00:03.919, duration_ms=3919, data={name=GPIO_wrapper}
+timestamp=[2023-04-24 13:06:00], mode=BUILD, duration=0:00:00.130, duration_ms=130, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:06:00], mode=BUILD, duration=0:00:00.122, duration_ms=122, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:06:18], mode=BUILD, duration=0:00:02.322, duration_ms=2322, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:06:18], mode=BUILD, duration=0:00:00.129, duration_ms=129, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:06:23], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:06:24], mode=BUILD, duration=0:00:00.128, duration_ms=128, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:09:10], mode=BUILD, duration=0:00:00.947, duration_ms=947, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:09:11], mode=BUILD, duration=0:00:00.114, duration_ms=114, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:09:15], mode=BUILD, duration=0:00:00.119, duration_ms=119, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:09:16], mode=BUILD, duration=0:00:00.128, duration_ms=128, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:11:31], mode=BUILD, duration=0:00:00.884, duration_ms=884, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:11:31], mode=BUILD, duration=0:00:00.128, duration_ms=128, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:11:43], mode=BUILD, duration=0:00:00.955, duration_ms=955, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:11:43], mode=BUILD, duration=0:00:00.191, duration_ms=191, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:11:47], mode=BUILD, duration=0:00:00.125, duration_ms=125, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:11:47], mode=BUILD, duration=0:00:00.125, duration_ms=125, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:12:30], mode=BUILD, duration=0:00:00.824, duration_ms=824, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:12:30], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:12:33], mode=BUILD, duration=0:00:00.131, duration_ms=131, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:12:34], mode=BUILD, duration=0:00:00.137, duration_ms=137, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:19:24], mode=BUILD, duration=0:00:02.466, duration_ms=2466, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:19:25], mode=BUILD, duration=0:00:00.190, duration_ms=190, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:19:32], mode=BUILD, duration=0:00:00.127, duration_ms=127, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:19:32], mode=BUILD, duration=0:00:00.110, duration_ms=110, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:25:45], mode=BUILD, duration=0:00:00.256, duration_ms=256, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:25:53], mode=BUILD, duration=0:00:00.947, duration_ms=947, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:25:53], mode=BUILD, duration=0:00:00.131, duration_ms=131, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:25:57], mode=BUILD, duration=0:00:00.130, duration_ms=130, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:25:57], mode=BUILD, duration=0:00:00.112, duration_ms=112, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:27:54], mode=BUILD, duration=0:00:01.385, duration_ms=1385, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:27:55], mode=BUILD, duration=0:00:00.205, duration_ms=205, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:27:57], mode=BUILD, duration=0:00:00.142, duration_ms=142, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:27:58], mode=BUILD, duration=0:00:00.142, duration_ms=142, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:29:52], mode=BUILD, duration=0:00:01.023, duration_ms=1023, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:29:52], mode=BUILD, duration=0:00:00.112, duration_ms=112, data={name=GPIO_system, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:30:00], mode=BUILD, duration=0:00:00.195, duration_ms=195, data={name=GPIO, configuration=Debug, clean_build=false}
+timestamp=[2023-04-24 13:30:01], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=GPIO_system, configuration=Debug, clean_build=false}
