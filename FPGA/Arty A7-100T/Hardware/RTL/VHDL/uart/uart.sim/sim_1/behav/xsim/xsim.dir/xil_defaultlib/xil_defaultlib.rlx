@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/VHDL/uart/uart.srcs/sim_1/new/UART_controller_tb.vhd,1694159592,vhdl,,,,uart_controller_tb,,,,,,,,
+C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/VHDL/uart/uart.srcs/sources_1/imports/UART_controller_files/UART.vhd,1693807928,vhdl,,,,uart,,,,,,,,
+C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/VHDL/uart/uart.srcs/sources_1/imports/UART_controller_files/UART_controller.vhd,1694159881,vhdl,,,,uart_controller,,,,,,,,
+C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/VHDL/uart/uart.srcs/sources_1/imports/UART_controller_files/UART_rx.vhd,1693807929,vhdl,,,,uart_rx,,,,,,,,
+C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/VHDL/uart/uart.srcs/sources_1/imports/UART_controller_files/UART_tx.vhd,1693807929,vhdl,,,,uart_tx,,,,,,,,
+C:/Users/luisr/Desktop/FPGA/Hardware/Arty A7-100T/VHDL/uart/uart.srcs/sources_1/imports/UART_controller_files/button_debounce.vhd,1693807929,vhdl,,,,button_debounce,,,,,,,,
